@@ -1,0 +1,115 @@
+body {
+	width: 1440px;	
+	margin: 0 auto;
+}
+
+.navi {
+	height: 64px;
+	background: white;
+}
+
+.logo {
+	display: inline-block;
+	margin-left: 220px;
+	margin-top: 14px;
+	height: 36px;
+	width: 87px;
+}
+
+.menu {
+	position: relative;
+
+	margin: 0; 	
+	margin-top: 23px;
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+
+	float: right;
+	white-space: nowrap;
+}
+
+	.menu li {
+		display: inline;
+		width: 66px;
+		margin-left: 60px; 
+		text-align: center;
+		padding-bottom: 23px;
+	}
+
+	.menu li:hover {
+		border-bottom: 1px solid #FA8823;
+	}
+
+	.menu a{
+		color: #7C6C61;
+		font-size: 12px;
+
+		text-decoration: none;
+	}
+
+	#m_join {
+		margin-right: 219px;
+	}
+
+.poster {
+	background-color: orange;
+	height: 640px;
+}
+
+.footer {
+	text-align: center;
+}
+
+	.footer p {
+		display: inline-block;
+	}
+
+#contactD {
+	margin: 0;
+	margin-top: 26px;	
+	padding: 0;
+}
+
+.dotL,.dotR {
+	display: inline-block;
+	color: #A18864;
+}
+
+.dotL p, .dotR p {
+	display: inline-block;
+	font-size: 2px;
+	letter-spacing: 3px;
+} 
+
+#contact {
+	color: #F8AF42;
+	font-size: 14px;
+}
+
+#tm {
+	position: relative;
+	right: 12px;
+
+	color: #A18864;
+	font-size: 11px;
+	margin-top: 20px;	
+	padding: 0;
+}
+
+#tm p {
+	margin: 0;
+}
+
+#qgroup {
+	margin: 8px 0 8px 0;	
+	color: #A18864;
+	font-size: 11px;
+}
+
+#qrcode {
+	margin: 0 auto;
+	width: 79px;
+	height: 79px;
+	margin-bottom: 50px;
+}
