@@ -21,20 +21,32 @@
     height: 100%;
     float: left;
 }
-.select1{
+#select1{
     width: 50%;
     float: left;
     padding: 12px 0;
     text-align: center;
     color: #ACACAC;
+    cursor: pointer;
 }
-.select2{
+#select2{
     width: 50%;
     float: left;
     padding: 12px 0;
     text-align: center;
     color: #ACACAC;
+    cursor: pointer;
 }
+.selected {
+    width: 50%;
+    float: left;
+    padding: 12px 0;
+    text-align: center;
+    color: #ACACAC;
+    cursor: pointer;
+    border-bottom: 2px solid #FA8823;
+}
+
 .tips{
     text-align: center;
     height: 50px;
@@ -132,6 +144,7 @@
     background-color: #fff;
     border-radius: 4px;
     outline: none;
+    cursor: pointer;
 }
 #registerBtn{
     display: block;
@@ -143,4 +156,5 @@
     background-color: #fff;
     border-radius: 4px;
     outline: none;
+    cursor: pointer;
 }
