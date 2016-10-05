@@ -1,18 +1,20 @@
 body {
-
+	width: 1440px;	
 	margin: 0 auto;
 }
 
 .navi {
 	height: 64px;
-	background: white;
-	border-bottom: 0.5px solid rgba(172, 172, 172, 0.38);
+	background: #FFFCF9;
 }
 
 .logo {
 	display: inline-block;
+	margin: 0;
 	margin-left: 220px;
 	margin-top: 14px;
+	padding: 0;
+	border: 0;
 	height: 36px;
 	width: 87px;
 }
@@ -33,13 +35,11 @@ body {
 	.menu li {
 		display: inline;
 		width: 66px;
-		margin-left: 60px; 
+		margin: 0;
+		padding-left: 30px;
+		padding-right: 30px; 
 		text-align: center;
 		padding-bottom: 23px;
-	}
-
-	.menu li:hover {
-		border-bottom: 1px solid #FA8823;
 	}
 
 	.menu a{
@@ -50,22 +50,20 @@ body {
 	}
 
 	#m_join {
-		margin-right: 219px;
+		margin-right: 189px;
 	}
 
 .poster {
-	background-color: orange;
+	background-color: #FFE6D0;
 	height: 640px;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 980px;
-	margin-left: -490px;
+	background: #FFFCF9;
 	text-align: center;
-
 }
 
 	.footer p {
@@ -76,20 +74,30 @@ body {
 	margin: 0;
 	margin-top: 26px;	
 	padding: 0;
+	border: 0;
 }
 
 .dotL,.dotR {
 	display: inline-block;
 	color: #A18864;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 .dotL p, .dotR p {
-	display: inline-block;
+	display: inline;
 	font-size: 2px;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+	border: 0;
 } 
 
 #contact {
+	margin: 0;
+	padding: 0;
+	border: 0;
 	color: #F8AF42;
 	font-size: 14px;
 }
@@ -99,9 +107,10 @@ body {
 	right: 12px;
 
 	color: #A18864;
-	font-size: 11px;
-	margin-top: 20px;	
+	font-size: 12px;
+	margin-top: 21px;	
 	padding: 0;
+	border: 0;
 }
 
 #tm p {
@@ -109,9 +118,9 @@ body {
 }
 
 #qgroup {
-	margin: 8px 0 8px 0;	
+	margin: 10px 0 10px 0;	
 	color: #A18864;
-	font-size: 11px;
+	font-size: 12px;	
 }
 
 #qrcode {
