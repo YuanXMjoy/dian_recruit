@@ -7,7 +7,6 @@
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/join_css.js"></script>
     <script src="js/menubar_css.js"></script>
-
     <title>join us</title>
 </head>
 <body>
@@ -16,11 +15,11 @@
         <img src="img/dian.png">
     </div>
     <ul class="menu">
-        <li id="m_index"><a href="#">首&nbsp;&nbsp;页</a></li>
+        <li id="m_index"><a href="index.html">首&nbsp;&nbsp;页</a></li>
         <li id="m_groups"><a href="#">项目组介绍</a></li>
         <li id="m_proc"><a href="#">招新流程</a></li>
         <li id="m_dian"><a href="#">了解Dian</a></li>
-        <li id="m_join"><a href="#">加入我们</a></li>
+        <li id="m_join"><a href="login.html">加入我们</a></li>
     </ul>
 </div>
 <div class="poster">
@@ -34,15 +33,17 @@
         </div>
         <div class="loginBox">
             <div class="tips">请输入用户名和密码后登录系统</div>
-            <div class="username">
-                <i class="user"></i>
-                <input id="userId" type="text" name="username" placeholder="手机/学号/邮箱">
+            <div class="InBox">
+                <div class="username">
+                    <i class="user"></i>
+                    <input id="userId" type="text" name="username" placeholder="手机/学号/邮箱">
+                </div>
+                <div class="password">
+                    <i class="pwd"></i>
+                    <input id="pwd" type="text" name="password" placeholder="请输入帐号密码" maxlength="21">
+                </div>
+                <button id="loginBtn">登录</button>
             </div>
-            <div class="password">
-                <i class="pwd"></i>
-                <input id="pwd" type="text" name="password" placeholder="请输入帐号密码" maxlength="21">
-            </div>
-            <button id="loginBtn">登录</button>
         </div>
         <div class="registerBox">
             <div class="tips">请输入用户信息注册帐号</div>
@@ -52,7 +53,8 @@
             </div>
             <div class="code">
                 <i class="code_i"></i>
-                <input type="text" name="code" placeholder="请输入验证码" >
+                <input type="text" name="code" placeholder="请输入验证码">
+                <button id="codeBtn">获取验证码</button>
             </div>
             <div class="password">
                 <i class="pwd"></i>
@@ -62,12 +64,14 @@
         </div>
     </div>
 </div>
+
 <div class="footer">
-    <div id = "contactD">
+    <div id="contactD">
         <div class="dotL">
             <p>&middot;&middot;&middot;&middot;&middot;&middot;</p>
         </div>
         <p id="contact">联系我们</p>
+
         <div class="dotR">
             <p>&middot;&middot;&middot;&middot;&middot;&middot;</p>
         </div>
@@ -75,10 +79,13 @@
     <div id="tm">
         <p>联系人：江同学 139-8627-4791
         </p>
+
         <p>|</p>
+
         <p>反馈邮箱：hr@hust.edu.cn</p>
     </div>
     <p id="qgroup">2016秋季招新群</p>
+
     <div id="qrcode">
         <img src="img/qrcode.png">
     </div>

@@ -1,42 +1,46 @@
-.joinBox{
+.joinBox {
     position: absolute;
     background-color: #fff;
     width: 526px;
     height: 352px;
-    top:224px;
+    top: 224px;
     left: 50%;
     margin-left: -263px;
     box-shadow: 4px 4px 4px 4px #dddddd;
 }
-.leftBox{
+
+.leftBox {
     position: relative;
     width: 240px;
     height: 100%;
     float: left;
     background-color: #ffaf2b;
 }
-.rightBox{
+
+.rightBox {
     position: relative;
     width: 286px;
     height: 100%;
     float: left;
 }
-#select1{
+#select1 {
     width: 50%;
     float: left;
     padding: 12px 0;
     text-align: center;
-    color: #ACACAC;
+    color: #cccccc;
     cursor: pointer;
 }
-#select2{
+
+#select2 {
     width: 50%;
     float: left;
     padding: 12px 0;
     text-align: center;
-    color: #ACACAC;
+    color: #cccccc;
     cursor: pointer;
 }
+
 .selected {
     width: 50%;
     float: left;
@@ -47,7 +51,7 @@
     border-bottom: 2px solid #FA8823;
 }
 
-.tips{
+.tips {
     text-align: center;
     height: 50px;
     line-height: 50px;
@@ -55,106 +59,143 @@
     font-size: 13px;
     margin-bottom: -25px;
 }
-.loginBox{
+
+.loginBox {
     position: absolute;
     left: 0;
-    top:48px;
+    top: 48px;
     width: 100%;
     height: 304px;
 }
-.registerBox{
+
+.registerBox {
     position: absolute;
     left: 0;
-    top:48px;
+    top: 48px;
     width: 100%;
     height: 304px;
 }
-.username{
+
+.username {
     position: relative;
     width: 206px;
     margin: 20px 40px;
 }
-.password{
+
+.password {
     position: relative;
     width: 206px;
     margin: 20px 40px;
 }
-.code{
+.InBox{
+    margin-top: 64px;
+}
+.code {
     position: relative;
     width: 206px;
     margin: 20px 40px;
 }
-.user{
+
+.user {
     position: absolute;
     width: 14px;
     height: 14px;
     left: 0;
-    top:14px;
+    top: 14px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(../img/phone_icon.png);
 }
-.pwd{
+
+.pwd {
     position: absolute;
     width: 14px;
     height: 14px;
     left: 0;
-    top:14px;
+    top: 14px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(../img/pwd_icon.png);
 }
-.code_i{
+
+.code_i {
     position: absolute;
     width: 14px;
     height: 14px;
     left: 0;
-    top:14px;
+    top: 14px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(../img/code_icon.png);
 }
 
-.loginBox input{
+.loginBox input {
     -webkit-box-sizing: border-box;
     width: 100%;
-    border-color:transparent;
+    border-color: transparent;
     border-bottom: 1px solid #DDDDDD;
-    padding: 10px 0 10px 30px ;
+    padding: 10px 0 10px 30px;
+    font-size: 14px;
+    outline: none;
+}
+#codeBtn{
+    font-size: 12px;
+    color: #999999;
+    position: absolute;
+    width: 78px;
+    height: 18px;
+    right: 4px;
+    top: 12px;
+    text-align:center ;
+}
+
+.registerBox input {
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    border-color: transparent;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px 0 10px 30px;
     font-size: 14px;
     outline: none;
 }
 
-.registerBox input{
-    -webkit-box-sizing: border-box;
-    width: 100%;
-    border-color:transparent;
-    border-bottom: 1px solid #DDDDDD;
-    padding: 10px 0 10px 30px ;
-    font-size: 14px;
-    outline: none;
-}
-#loginBtn{
+#loginBtn {
     display: block;
     width: 138px;
     height: 40px;
     margin: 40px auto;
-    color:#FA8823;
+    color: #FA8823;
     border: 1px solid #FA8823;
     background-color: #fff;
     border-radius: 4px;
     outline: none;
     cursor: pointer;
 }
-#registerBtn{
+
+#registerBtn {
     display: block;
     width: 138px;
     height: 40px;
     margin: 24px auto;
-    color:#FA8823;
+    color: #FA8823;
     border: 1px solid #FA8823;
     background-color: #fff;
     border-radius: 4px;
     outline: none;
     cursor: pointer;
+}
+
+::-moz-placeholder {
+    color: #cccccc;
+    font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+    color: #cccccc;
+    font-size: 13px;
+}
+
+:-ms-input-placeholder {
+    color: #cccccc;
+    font-size: 13px;
 }

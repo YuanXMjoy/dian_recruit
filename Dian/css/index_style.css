@@ -21,13 +21,11 @@ body {
 
 .menu {
 	position: relative;
-
 	margin: 0; 	
 	margin-top: 23px;
 	padding: 0;
 	display: inline-block;
 	list-style: none;
-
 	float: right;
 	white-space: nowrap;
 }
@@ -41,11 +39,9 @@ body {
 		text-align: center;
 		padding-bottom: 23px;
 	}
-
 	.menu a{
 		color: #7C6C61;
 		font-size: 12px;
-
 		text-decoration: none;
 	}
 
@@ -60,7 +56,6 @@ body {
 	padding: 0;
 	border: 0;
 }
-
 .footer {
 	background: #FFFCF9;
 	text-align: center;
@@ -105,7 +100,6 @@ body {
 #tm {
 	position: relative;
 	right: 12px;
-
 	color: #A18864;
 	font-size: 12px;
 	margin-top: 21px;	
