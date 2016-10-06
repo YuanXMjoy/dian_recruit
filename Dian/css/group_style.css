@@ -1,0 +1,40 @@
+.circle,.circleImg{
+
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    background: url(/Dian/img/cherry.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+}
+#mobileGroup{
+    position: absolute;
+    top:16%;
+    left: 33%;
+}
+#xunceGroup{
+    position: absolute;
+    top:16%;
+    right: 33%;
+}
+#chuangyeGroup{
+    position: absolute;
+    top:45%;
+    left: 10%;
+}
+#norwayGroup{
+    position: absolute;
+    top:45%;
+    left: 33%;
+}
+#meiguoGroup{
+    position: absolute;
+    top:45%;
+    right: 33%;
+}
+#smartSanGroup{
+    position: absolute;
+    top:45%;
+    right: 10%;
+}
