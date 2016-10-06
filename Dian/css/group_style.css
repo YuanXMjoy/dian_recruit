@@ -38,3 +38,42 @@
     top:45%;
     right: 10%;
 }
+#xunCe,#norway,#smartSan{
+    background-color: #FFE6D0;
+}
+.oddImg{
+    position: absolute;
+    top:25%;
+    left: 12%;
+}
+.evenImg{
+    position: absolute;
+    top:25%;
+    right: 12%;
+}
+h1{
+    color: #FA8823;
+    font-size: 45px;
+}
+.introduceBox1{
+    position:absolute;
+    top:20%;
+    right: 25%;
+    text-align: center;
+}
+.introduceBox2{
+    position:absolute;
+    top:20%;
+    left: 25%;
+    text-align: center;
+}
+.textBox1{
+    position:absolute;
+    top:33%;
+    right: 25%;
+}
+.textBox2{
+    position:absolute;
+    top:33%;
+    left: 25%;
+}
