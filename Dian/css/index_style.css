@@ -51,6 +51,7 @@ body {
 
 .poster {
 	background-color: #FFE6D0;
+	height: 640px;
 	margin: 0;
 	padding: 0;
 	border: 0;
