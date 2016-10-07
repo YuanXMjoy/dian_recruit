@@ -1,0 +1,90 @@
+body {
+	width: 1440px;
+	margin: 0 auto;
+	background-image: url('../img/process.png');
+	background-position: 0 64px;
+	background-size: 1440px 640px;
+	background-repeat: no-repeat;		
+}
+
+.poster {
+	cursor: url('../img/cursor.png'), default;	
+	margin: 0;
+	padding: 0;
+}
+
+.joinUs {
+	position: relative;
+	top: 46%;
+	left: 41.5%;
+	width: 234px;
+
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#join {
+	position: relative;
+
+	width: 234px;
+	height: 22px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#join:hover {
+	animation: joindian 1.8s infinite linear;
+	-webkit-animation: joindian 1.8s infinite linear;
+	-moz-animation: joindian 1.8s infinite linear;	
+	-o-animation: joindian 1.8s infinite linear;	
+}
+
+@keyframes joindian {
+	0%{
+		transform: scale(1,1); 					
+	}	
+	50%{		
+		transform: scale(1.2,1.2);				
+	}	
+	100%{
+		transform: scale(1,1);		 					 
+	}		
+}
+
+@-o-keyframes joindian {
+	0%{
+		transform: scale(1,1); 					
+	}	
+	50%{		
+		transform: scale(1.2,1.2);				
+	}	
+	100%{
+		transform: scale(1,1);		 					 
+	}		
+}
+
+@-webkit-keyframes joindian {
+	0%{
+		transform: scale(1,1); 					
+	}	
+	50%{		
+		transform: scale(1.2,1.2);				
+	}	
+	100%{
+		transform: scale(1,1);		 					 
+	}		
+}
+
+@-moz-keyframes joindian {
+	0%{
+		transform: scale(1,1); 					
+	}	
+	50%{		
+		transform: scale(1.2,1.2);				
+	}	
+	100%{
+		transform: scale(1,1);		 					 
+	}		
+}
