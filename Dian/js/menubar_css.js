@@ -4,5 +4,5 @@ $(document).ready(function(){
     });
     $(".menu li").mouseout(function(){
         $(this).css("borderStyle","none");
-    });     
+    });    
 }); 

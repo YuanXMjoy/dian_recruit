@@ -1,5 +1,4 @@
 .circle,.circleImg{
-
     display: inline-block;
     width: 160px;
     height: 160px;
@@ -61,19 +60,35 @@ h1{
     right: 25%;
     text-align: center;
 }
+
+.introduceBox1_meiguo {
+    position:absolute;
+    top:20%;
+    right: 18%;
+    text-align: center;    
+}
+
 .introduceBox2{
     position:absolute;
     top:20%;
     left: 25%;
     text-align: center;
 }
+
+.introduceBox2_smartSan {
+    position:absolute;
+    top:20%;
+    left: 18%;
+    text-align: center;    
+}
+
 .textBox1{
     position:absolute;
     top:33%;
-    right: 25%;
+    right: 19%;
 }
 .textBox2{
     position:absolute;
     top:33%;
-    left: 25%;
+    left: 19%;
 }
