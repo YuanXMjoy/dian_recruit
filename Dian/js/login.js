@@ -24,10 +24,10 @@ function codeGet() {
                 }
             }
 
-
         });
     });
 }
+
 function time(o) {
     if (wait == 0) {
         o.removeAttribute("disabled");
@@ -72,7 +72,6 @@ function login() {
             if (status == 0) {
                 alert("登录成功！");
             }
-
         });
     });
 
