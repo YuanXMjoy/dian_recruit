@@ -23,7 +23,6 @@ function codeGet() {
                     time(codeBtn);
                 }
             }
-
         });
     });
 }
@@ -44,10 +43,10 @@ function time(o) {
     }
 }
 function register() {
-    var account = $("#account").val();
-    var code = $("#code").val();
-    var pwd = $("#passwordRe").val();
     $("#registerBtn").click(function () {
+        var account = $("#account").val();
+        var code = $("#code").val();
+        var pwd = $("#passwordRe").val();
         $.post("http://120.76.117.125:90/register/getreginfo", {
             "phone": account,
             "pwd": pwd,
@@ -55,14 +54,28 @@ function register() {
         }, function (res) {
             var resultObj = JSON.parse(res);
             var status = resultObj.status;
-            alert("注册成功");
+            switch (status){
+                case 0:
+                    alert("注册成功");
+                    break;
+                case 1:
+                    alert("验证码错误");
+                    break;
+                case 2:
+                    alert("该手机号码已注册，密码已覆盖");
+                    break;
+                case 3:
+                    alert("验证码已经过期");
+                    break;
+            }
         });
     });
 }
 function login() {
-    var user = $("#userId").val();
-    var pwd = $("#pwdLogin").val();
+
     $("#loginBtn").click(function () {
+        var user = $("#userId").val();
+        var pwd = $("#pwdLogin").val();
         $.post("http://120.76.117.125:90/login/getlogininfo", {
             "login": user,
             "pwd": pwd
@@ -71,6 +84,8 @@ function login() {
             var status = resultObj.status;
             if (status == 0) {
                 alert("登录成功！");
+            }else{
+                alert("登录失败！");
             }
         });
     });
