@@ -3,6 +3,7 @@
  */
 var wait = 60;
 var errorCode;
+var loginCode;
 $(document).ready(function () {
         codeGet();
         register();
@@ -19,15 +20,13 @@ function codeValidate(obj) {
     var flag = reg.test(obj);
     return flag;
 }
-function formValidateEmpty(account, code, pwd) {
+function regValidateError(account, code, pwd) {
     var count = 0;
     if (account == "") {
         $("#account").addClass("error");
     } else {
-        var userBool = isInteger(account);
-        console.log(account);
-        console.log(userBool);
-        if (userBool) {
+        var accBool = isInteger(account);
+        if (accBool) {
             count++;
         } else {
             $("#account").addClass("error");
@@ -56,6 +55,29 @@ function formValidateEmpty(account, code, pwd) {
         $("#account").removeClass("error");
         $("#code").removeClass("error");
         $("#passwordRe").removeClass("error");
+    }
+}
+function loginValidateError(user, pwd) {
+    var count = 0;
+    if (user == "") {
+        $("#userId").addClass("error");
+    } else {
+        var userBool = isInteger(user);
+        if (userBool) {
+            count++;
+        } else {
+            $("#userId").addClass("error");
+        }
+    }
+    if (pwd == "") {
+        $("#pwdLogin").addClass("error");
+    } else {
+        count++;
+    }
+    if (count == 2) {
+        loginCode = true;
+        $("#userId").removeClass("error");
+        $("#pwdLogin").removeClass("error");
     }
 }
 function codeGet() {
@@ -102,7 +124,7 @@ function register() {
         var account = $("#account").val();
         var code = $("#code").val();
         var pwd = $("#passwordRe").val();
-        formValidateEmpty(account, code, pwd);
+        regValidateError(account, code, pwd);
         if (errorCode) {
             $.post("http://120.76.117.125:90/register/getreginfo", {
                 "phone": account,
@@ -111,7 +133,7 @@ function register() {
             }, function (res) {
                 var resultObj = JSON.parse(res);
                 var status = resultObj.status;
-                errorCode =false;
+                errorCode = false;
                 switch (status) {
                     case 0:
                         alert("注册成功");
@@ -134,24 +156,21 @@ function login() {
     $("#loginBtn").click(function () {
         var user = $("#userId").val();
         var pwd = $("#pwdLogin").val();
-        if (user == "") {
-            $("#userId").addClass("error");
+        loginValidateError(user, pwd);
+        if (loginCode) {
+            $.post("http://120.76.117.125:90/login/getlogininfo", {
+                "login": user,
+                "pwd": pwd
+            }, function (res) {
+                loginCode = false;
+                var resultObj = JSON.parse(res);
+                var status = resultObj.status;
+                if (status == 0) {
+                    alert("登录成功！");
+                } else {
+                    alert("登录失败！");
+                }
+            });
         }
-        if (pwd == "") {
-            $("#pwdLogin").addClass("error");
-        }
-        $.post("http://120.76.117.125:90/login/getlogininfo", {
-            "login": user,
-            "pwd": pwd
-        }, function (res) {
-            var resultObj = JSON.parse(res);
-            var status = resultObj.status;
-            if (status == 0) {
-                alert("登录成功！");
-            } else {
-                alert("登录失败！");
-            }
-        });
     });
-
 }
