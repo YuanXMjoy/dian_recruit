@@ -198,3 +198,69 @@
     color: #cccccc;
     font-size: 13px;
 }
+
+.error {
+    display: inline-block;
+    color: #ff5849;
+    font-size: 16px;
+}
+#account.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#account.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#account.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#account.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#code.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#code.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#code.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#code.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#passwordRe.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#passwordRe.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#passwordRe.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#passwordRe.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#userId.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#userId.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#userId.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#userId.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#pwdLogin.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#pwdLogin.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#pwdLogin.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#pwdLogin.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
