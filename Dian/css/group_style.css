@@ -73,7 +73,7 @@ h1{
 .introduceBox1_meiguo {
     position:absolute;
     top:20%;
-    right: 15%;
+    right: 22%;
     text-align: center;    
 }
 
@@ -100,6 +100,21 @@ h1{
     position:absolute;
     top:33%;
     right: 5%;
+}
+.textBox1_chuangye{
+    position:absolute;
+    top:33%;
+    right: 13%;
+}
+.textBox1_meiguo{
+    position:absolute;
+    top:32%;
+    right: 13%;
+}
+.textBox1_huaWei{
+    position:absolute;
+    top:39%;
+    right: 13%;
 }
 .textBox2{
     position:absolute;
