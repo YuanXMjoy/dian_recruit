@@ -1,10 +1,15 @@
 
 .content {
-	height: auto;
+	height: 1200px;
 	margin: 0;
 	padding: 0;
 	border-top: 1px solid #ECE8E5;
 }
+
+.content input[type="text"], .content textarea {
+	border-radius: 3px;
+}
+
 
 .fillin_item, .check_item, #title {
 	margin: 0;
@@ -37,7 +42,7 @@
 	color: #393939;
 }
 
-.fillin_item input {
+.fillin_item input[type="text"] {
 	width: 248px;
 	height: 40px;
 	margin-left: 10px; 
@@ -48,6 +53,40 @@
 
 	text-align: left;
 	padding-left: 14px;
+}
+
+#input_prizes, #input_tech, #input_intro {
+	position: relative;
+	left: 10px;
+	width: 380px;
+	height: 68px;
+
+	resize: none;
+	font-size: 14px;
+	color: #393939;
+	border: #A18864 solid 0.5px;
+
+	text-align: left;
+	padding-left: 14px;	
+	padding-top: 14px;
+}
+
+#input_prizes {
+}
+
+#text_prizes, #text_tech, #text_intro {
+	position: relative;
+	top: -57px;
+}
+
+#line_prizes, #line_tech {
+	position: relative;
+	left: -28px;
+}
+
+#line_intro {
+	position: relative;
+	left: -56px;
 }
 
 #line_gpa {
