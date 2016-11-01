@@ -7,6 +7,7 @@ var loginCode;
 
 $(document).ready(function () {
         $("#arrangeModel").hide();
+        $("#applyForm").hide();
         codeGet();
         register();
         login();
