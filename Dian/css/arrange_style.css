@@ -1,0 +1,150 @@
+.mainBox {
+    height: 620px;
+    border-top: 1px solid #ECE8E5;
+
+}
+
+.arrange {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #fffcf6;
+}
+
+.arrangeBox {
+    width: 70%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #FFFCF9;
+}
+
+.applyBox {
+    width: 169px;
+    height: 143px;
+    margin-top: 75px;
+    margin-right: 32px;
+    background-color: #FDE7D2;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 2px 2px 2px 2px #dddddd;
+}
+
+.noteTest {
+    width: 169px;
+    height: 143px;
+    top: 10%;
+    margin-top: 75px;
+    margin-right: 32px;
+    background-color: #DFDDDA;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 2px 2px 2px 2px #dddddd;
+}
+
+.interview {
+    width: 169px;
+    height: 143px;
+    top: 10%;
+    margin-top: 75px;
+    margin-right: 32px;
+    background-color: #DFDDDA;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 2px 2px 2px 2px #dddddd;
+}
+
+.nightTest {
+    width: 169px;
+    height: 143px;
+    top: 10%;
+    margin-top: 75px;
+    margin-right: 32px;
+    background-color: #DFDDDA;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 2px 2px 2px 2px #dddddd;
+}
+
+.applyStatus {
+    width: 169px;
+    height: 143px;
+    top: 10%;
+    margin-top: 75px;
+    margin-right: 32px;
+    background-color: #DFDDDA;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 2px 2px 2px 2px #dddddd;
+}
+
+.arrangeItem {
+    color: #FA8823;
+    font-size: 20px;
+
+}
+
+.arrangeTime {
+    color: #4A4A4A;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.applyBtn {
+    color: #FF7F28;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.arrangeStatus {
+    width: 44px;
+    height: 20px;
+    font-size: 10px;
+    color: #ffffff;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.pass {
+    background-color: #6BC36B;
+    text-align: center;
+
+}
+
+.check {
+    background-color: #FA8823;
+    text-align: center;
+}
+
+.fail {
+    background-color: #FF4933;
+}
+.footer, #footer {
+
+    background: #ffffff;
+    text-align: center;
+
+}
