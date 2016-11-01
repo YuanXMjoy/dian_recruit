@@ -4,7 +4,9 @@
 var wait = 60;
 var errorCode;
 var loginCode;
+
 $(document).ready(function () {
+        $("#arrangeModel").hide();
         codeGet();
         register();
         login();
@@ -87,14 +89,14 @@ function codeGet() {
         if (phoneNum == "") {
             $("#account").addClass("error");
         } else {
-            time(codeBtn);
             $.post("http://120.76.117.125:90/sendmsg/sendregmsg", {
                 "phone": phoneNum
             }, function (res) {
                 var resultObj = JSON.parse(res);
-                var resultData = resultObj.result;
-                if (resultData != undefined) {
-                    var status = resultData.success;
+                var status = resultObj.status;
+                var msg=resultObj.msg;
+                if(status) {
+                    time(codeBtn);
                 }
             });
 
@@ -167,6 +169,9 @@ function login() {
                 var status = resultObj.status;
                 if (status == 0) {
                     alert("登录成功！");
+                    sessionStorage.user=user;
+                    $("#joinUs").hide();
+                    $("#arrangeModel").show();
                 } else {
                     alert("登录失败！");
                 }

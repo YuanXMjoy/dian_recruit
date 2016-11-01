@@ -9,6 +9,7 @@
 	<link rel="icon" href="img/Dianlogo.ico"  type="image/x-icon">
 	<script src="js/jquery-2.2.0.min.js"></script>
 	<script src="js/menubar_css.js"></script>
+	<script src="js/information.js"></script>
 </head>
 <body>	
 	<div class="navi">
@@ -28,49 +29,49 @@
 		<p id="title">Dian团队2016年秋季招新报名表</p>
 		<div class="fillin_item">
 			<p>姓名</p>
-			<input type="text" name="name" id="input_name" placeholder="">
+			<input type="text" name="name" id="input_name" placeholder="请填写姓名">
 		</div>
 		<div class="fillin_item">
 			<p>学号</p>
-			<input type="text" name="stu_id" id="input_id" placeholder="">
+			<input type="text" name="stu_id" id="input_uid" placeholder="请填写学号">
 		</div>
 		<div class="fillin_item" id="line_sex">
 			<p>性别</p>
-			<input type="radio" name="sex" id="input_sex_f">
+			<input type="radio" name="sex" id="input_sex_f" value="0">
 			<p id="female">女</p>
-			<input type="radio" name="sex" id="input_sex_m">
+			<input type="radio" name="sex" id="input_sex_m" value="1">
 			<p>男</p>			
 		</div>
 		<div class="fillin_item">
 			<p id="tel">联系电话</p>
-			<input type="text" name="tel" id="input_tel" placeholder="">
+			<input type="text" name="tel" id="input_tel" placeholder="请填写联系电话">
 		</div>
 		<div class="fillin_item">
 			<p id="mail">联系邮箱</p>
-			<input type="text" name="mail" id="input_mail" placeholder="">
+			<input type="text" name="mail" id="input_mail" placeholder="请填写邮箱">
 		</div>
 		<div class="fillin_item">
 			<p>专业</p>
-			<input type="text" name="major" id="input_major" placeholder="">
+			<input type="text" name="major" id="input_major" placeholder="请填写专业">
 		</div>	
 		<div class="check_item">
 			<div class="input_grade_1516">
 				<p>年级</p>
-				<input type="radio" name="grade" id="input_grade_16" placeholder="">
+				<input type="radio" name="grade" id="input_grade_16" value="2016" >
 				<p id="text_16">2016级</p>
-				<input type="radio" name="grade" id="input_grade_15" placeholder="">
+				<input type="radio" name="grade" id="input_grade_15" value="2015">
 				<p>2015级</p>			
 			</div>	
 			<div class="input_grade_1314">
-				<input type="radio" name="grade" id="input_grade_14" placeholder="">
+				<input type="radio" name="grade" id="input_grade_14" value="2014" >
 				<p id="text_14">2014级</p>	
-				<input type="radio" name="grade" id="input_grade_13" placeholder="">
+				<input type="radio" name="grade" id="input_grade_13" value="2013" >
 				<p>2013级</p>
 			</div>									
 		</div>		
 		<div class="fillin_item" id="line_gpa">
 			<p>最近学期加权</p>
-			<input type="text" name="gpa" id="input_gpa" placeholder="">
+			<input type="text" name="gpa" id="input_gpa" placeholder="请填写加权">
 		</div>	
 		<div class="fillin_item" id="line_prizes">
 			<p id="text_prizes">曾获奖项</p>
@@ -88,7 +89,7 @@
 			<p id="text_join">加入团队打算</p>
 			<textarea id="input_join" placeholder="结合你对Dian团队的认识，描述你加入Dian团队后的打算"></textarea>
 		</div>
-		<button id="submit">提交报名表</button>	
+		<button id="submit">提交报名表</button>
 	</div>
 
 	<div class="footer">

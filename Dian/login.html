@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/login_style.css">
     <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/arrange_style.css">
     <link rel="icon" href="img/Dianlogo.ico"  type="image/x-icon">
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/join_css.js"></script>
@@ -24,45 +25,77 @@
         <li id="m_join"><a href="login.html">加入我们</a></li>
     </ul>
 </div>
-<div class="poster">
-</div>
-<div class="joinBox">
-    <div class="leftBox"></div>
-    <div class="rightBox">
-        <div class="selectBox">
-            <div id="select1">登录</div>
-            <div id="select2">注册</div>
-        </div>
-        <div class="loginBox">
-            <div class="tips">请输入用户名和密码后登录系统</div>
-            <div class="InBox">
+
+<div class="mainBox">
+    <div id="joinUs" class="joinBox">
+        <div class="leftBox"></div>
+        <div class="rightBox">
+            <div class="selectBox">
+                <div id="select1">登录</div>
+                <div id="select2">注册</div>
+            </div>
+            <div class="loginBox">
+                <div class="tips">请输入用户名和密码后登录系统</div>
+                <div class="InBox">
+                    <div class="username">
+                        <i class="user"></i>
+                        <input id="userId" type="text" name="username" placeholder="手机/邮箱/学号"   >
+                    </div>
+                    <div class="password">
+                        <i class="pwd"></i>
+                        <input id="pwdLogin" type="password" name="password" placeholder="请输入帐号密码" minlength="4" maxlength="15" >
+                    </div>
+                    <button id="loginBtn">登录</button>
+                </div>
+            </div>
+            <div class="registerBox">
+                <div class="tips">请输入用户信息注册帐号</div>
                 <div class="username">
                     <i class="user"></i>
-                    <input id="userId" type="text" name="username" placeholder="手机/邮箱/学号"   >
+                    <input type="text" id="account" name="username" placeholder="请输入手机号" minlength="11" maxlength="11"  >
+                </div>
+                <div class="code">
+                    <i class="code_i"></i>
+                    <input id="code" type="text" name="code" placeholder="请输入验证码" minlength="4" maxlength="4" >
+                    <button type="button" id="codeBtn">获取验证码</button>
                 </div>
                 <div class="password">
                     <i class="pwd"></i>
-                    <input id="pwdLogin" type="password" name="password" placeholder="请输入帐号密码" minlength="4" maxlength="15" >
+                    <input type="password" name="password"  id="passwordRe" placeholder="请输入密码" minlength="4" maxlength="15" >
                 </div>
-                <button id="loginBtn">登录</button>
+                <button id="registerBtn">确认</button>
             </div>
         </div>
-        <div class="registerBox">
-            <div class="tips">请输入用户信息注册帐号</div>
-            <div class="username">
-                <i class="user"></i>
-                <input type="text" id="account" name="username" placeholder="请输入手机号" minlength="11" maxlength="11"  >
+    </div>
+
+    <div id="arrangeModel" class="arrange">
+        <div class="arrangeBox">
+            <div class="applyBox">
+                <div class="arrangeStatus">已通过</div>
+                <p class="arrangeItem">网申</p>
+                <p class="arrangeTime">截至时间:<br>2016.11.13 24:00</p><br>
+                <a class="applyBtn">点击此处报名</a>
             </div>
-            <div class="code">
-                <i class="code_i"></i>
-                <input id="code" type="text" name="code" placeholder="请输入验证码" minlength="4" maxlength="4" >
-                <button type="button" id="codeBtn">获取验证码</button>
+            <div class="noteTest">
+                <div class="arrangeStatus">已通过</div>
+                <p class="arrangeItem">笔试</p>
+                <p class="arrangeTime">时间:11.14 19:00<br>地点：启明学院亮胜楼401</p>
             </div>
-            <div class="password">
-                <i class="pwd"></i>
-                <input type="password" name="password"  id="passwordRe" placeholder="请输入密码" minlength="4" maxlength="15" >
+            <div class="interview">
+                <div class="arrangeStatus">已通过</div>
+                <p class="arrangeItem">面试</p>
+                <p class="arrangeTime">时间:11.14 19:00<br>地点：启明学院亮胜楼401</p>
             </div>
-            <button id="registerBtn">确认</button>
+            <div class="nightTest">
+                <div class="arrangeStatus">已通过</div>
+                <p class="arrangeItem">通宵测试</p>
+                <p class="arrangeTime">时间:11.14 19:00<br>地点：启明学院亮胜楼401</p>
+            </div>
+            <div class="applyStatus">
+                <div class="arrangeStatus">已通过</div>
+                <p class="arrangeItem">录取状态</p>
+                <p class="arrangeTime">时间:11.14 19:00</p>
+            </div>
         </div>
     </div>
 </div>

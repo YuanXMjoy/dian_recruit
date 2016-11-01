@@ -1,3 +1,4 @@
+
 .joinBox {
     position: absolute;
     width: 526px;
@@ -138,7 +139,7 @@
     outline: none;
 }
 #codeBtn{
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     width: 78px;
     height: 18px;
