@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>报名页面</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/loggedIn_style.css">
+	<link rel="icon" href="img/Dianlogo.ico"  type="image/x-icon">
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/menubar_css.js"></script>
+</head>
+<body>	
+	<div class="navi">
+		<div class="logo">
+		<img src="img/dian.png">
+		</div>
+		<ul class="menu">
+			<li id="m_index"><a href="index.html">首&nbsp;&nbsp;页</a></li>
+			<li id="m_groups"><a href="groups.html">项目组介绍</a></li>
+			<li id="m_proc"><a href="process.html">招新流程</a></li>
+			<li id="m_dian"><a href="http://dian.hust.edu.cn" target="_blank">了解Dian</a></li>
+			<li id="m_join"><a href="login.html">加入我们</a></li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<p id="title">Dian团队2016年秋季招新报名表</p>
+		<div class="fillin_item">
+			<p>姓名</p>
+			<input type="text" name="name" id="input_name" placeholder="">
+		</div>
+		<div class="fillin_item">
+			<p>学号</p>
+			<input type="text" name="stu_id" id="input_id" placeholder="">
+		</div>
+		<div class="fillin_item" id="line_sex">
+			<p>性别</p>
+			<input type="radio" name="sex" id="input_sex_f">
+			<p id="female">女</p>
+			<input type="radio" name="sex" id="input_sex_m">
+			<p>男</p>			
+		</div>
+		<div class="fillin_item">
+			<p id="tel">联系电话</p>
+			<input type="text" name="tel" id="input_tel" placeholder="">
+		</div>
+		<div class="fillin_item">
+			<p id="mail">联系邮箱</p>
+			<input type="text" name="mail" id="input_mail" placeholder="">
+		</div>
+		<div class="fillin_item">
+			<p>专业</p>
+			<input type="text" name="major" id="input_major" placeholder="">
+		</div>	
+		<div class="check_item">
+			<div class="input_grade_1516">
+				<p>年级</p>
+				<input type="radio" name="grade" id="input_grade_16" placeholder="">
+				<p id="text_16">2016级</p>
+				<input type="radio" name="grade" id="input_grade_15" placeholder="">
+				<p>2015级</p>			
+			</div>	
+			<div class="input_grade_1314">
+				<input type="radio" name="grade" id="input_grade_14" placeholder="">
+				<p id="text_14">2014级</p>	
+				<input type="radio" name="grade" id="input_grade_13" placeholder="">
+				<p>2013级</p>
+			</div>									
+		</div>		
+		<div class="fillin_item" id="line_gpa">
+			<p>最近学期加权</p>
+			<input type="text" name="gpa" id="input_gpa" placeholder="">
+		</div>	
+		<div class="fillin_item" id="line_prizes">
+			<p id="text_prizes">曾获奖项</p>
+			<textarea id="input_prizes" placeholder="数学／物理／计算机方面"></textarea>
+		</div>	
+		<div class="fillin_item" id="line_tech">
+			<p id="text_tech">技术积累</p>
+			<textarea id="input_tech" placeholder="主要介绍完成的作品、擅长的技术方向、感兴趣的技术内容等"></textarea>
+		</div>	
+		<div class="fillin_item" id="line_intro">
+			<p id="text_intro">个人综合简介</p>
+			<textarea id="input_intro" placeholder="主要介绍性格特点、工作作风、团队精神等"></textarea>
+		</div>
+		<div class="fillin_item" id="line_join">
+			<p id="text_join">加入团队打算</p>
+			<textarea id="input_join" placeholder="结合你对Dian团队的认识，描述你加入Dian团队后的打算"></textarea>
+		</div>
+		<button id="submit">提交报名表</button>	
+	</div>
+
+	<div class="footer">
+		<div id = "contactD">	
+			<div class="dotL">
+				<p>&middot;&middot;&middot;&middot;&middot;&middot;</p>
+			</div>
+			<p id="contact">联系我们</p>
+			<div class="dotR">
+				<p>&middot;&middot;&middot;&middot;&middot;&middot;</p>	
+			</div>
+		</div>
+
+		<div id="tm">
+			<p>联系人：江同学 139-8627-4791
+			</p>
+			<p>|</p>
+			<p>反馈邮箱：hr@hust.org.cn</p>
+		</div>
+		<p id="qgroup">2016秋季招新群</p>
+		<div id="qrcode">
+			<img src="img/qrcode.png">
+		</div>
+	</div>
+</body>
+</html>

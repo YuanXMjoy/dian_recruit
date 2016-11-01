@@ -1,0 +1,199 @@
+
+.content {
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background: #FFFCF9;	
+	border-top: 1px solid #ECE8E5;
+}
+
+.content input[type="text"], .content textarea {
+	border-radius: 3px;
+}
+
+
+.fillin_item, .check_item, #title {
+	margin: 0;
+	padding: 0;
+	border: 0; 
+
+	margin-left: 546px;
+	margin-bottom: 24px;
+	margin-top: 24px;
+}
+
+.fillin_item input,#female {
+	margin: 0;
+	padding: 0;
+	border: 0; 	
+}
+
+.check_item p {
+	display: inline-block;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.fillin_item p,.check_item p {
+	display: inline-block;
+
+	font-size: 14px;
+	color: #393939;
+}
+
+.fillin_item input[type="text"] {
+	width: 248px;
+	height: 40px;
+	margin-left: 10px; 
+
+	font-size: 14px;
+	color: #393939;
+	border: #A18864 solid 0.5px;
+
+	text-align: left;
+	padding-left: 14px;
+}
+
+#input_prizes, #input_tech, #input_intro, #input_join {
+	position: relative;
+	left: 10px;
+	width: 380px;
+	height: 68px;
+
+	resize: none;
+	font-size: 14px;
+	color: #393939;
+	border: #A18864 solid 0.5px;
+
+	text-align: left;
+	padding-left: 14px;	
+	padding-top: 14px;
+	padding-bottom: 0;
+}
+
+#text_prizes, #text_tech, #text_intro, #text_join {
+	position: relative;
+	top: -58px;
+}
+
+#line_prizes, #line_tech {
+	position: relative;
+	left: -28px;
+
+	height: 84px;
+}
+
+#line_intro, #line_join {
+	position: relative;
+	left: -56px;
+
+	height: 84px;
+}
+
+#line_gpa {
+	position: relative;
+	left: -55px;
+}
+
+#line_sex {
+	margin-bottom: 0;
+	margin-top: 0;
+	height: 40px;
+}
+
+#line_join {
+	margin-bottom: 48px;
+}
+
+#female {
+	margin-right: 10px;
+}
+
+#tel, #mail, #input_tel, #input_mail {
+	position: relative;
+	left: -27px;
+}
+
+#input_sex_m, #input_sex_f, #input_grade_16,
+#input_grade_15, #input_grade_14, #input_grade_13 {
+	position: relative;
+	top: 3px;
+ 	left: 10px;
+
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+}
+
+#input_grade_14, #input_grade_13 {
+	position: relative;
+	left: 42px;
+}
+
+.input_grade_1516 {
+	display: inline;
+
+	height: 20px;
+}
+
+.input_grade_1314 {
+	display: block;
+
+	margin: 0;
+	padding: 0;
+	margin-top: 16px; 
+	margin-bottom: 24px;
+	width: 248px;
+	height: 20px;
+}
+
+.input_grade_1314 p {
+	position: relative;
+	left: 32px;
+}
+
+.input_grade_1516 p, .input_grade_1314 p {
+	height: 20px;
+}
+
+#text_14, #text_16 {
+	margin-right: 20px;
+}
+
+#title {
+	margin-top: 48px;
+	margin-bottom: 48px;
+
+	font-size: 20px;
+	color: #FA8823;	
+}
+
+#m_join {
+	border-bottom: 1px solid #FA8823;
+}
+
+#submit {
+	position: relative;
+	left: 588px;
+
+	width: 248px;
+	height: 40px;
+
+	margin-bottom: 40px;	
+	border: 0;
+	border-radius: 3px;
+	background: #FA8823;
+
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.footer, #footer {
+	background: 0;
+}

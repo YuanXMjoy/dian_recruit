@@ -59,9 +59,14 @@ body {
 	padding: 0;
 	border-top: 1px solid #ECE8E5;
 }
+
 .footer, #footer {
 	background: #FFFCF9;
 	text-align: center;
+}
+
+.footer {
+	padding-top: 0px;
 }
 
 	.footer p {
@@ -69,9 +74,8 @@ body {
 	}
 
 #contactD {
-	margin: 0;
-	margin-top: 26px;	
-	padding: 0;
+	margin: 0;	
+	padding-top: 26px;
 	border: 0;
 }
 
