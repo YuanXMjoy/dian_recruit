@@ -1,8 +1,9 @@
 
 .content {
-	height: 1200px;
+	height: auto;
 	margin: 0;
 	padding: 0;
+	background: #FFFCF9;	
 	border-top: 1px solid #ECE8E5;
 }
 
@@ -55,7 +56,7 @@
 	padding-left: 14px;
 }
 
-#input_prizes, #input_tech, #input_intro {
+#input_prizes, #input_tech, #input_intro, #input_join {
 	position: relative;
 	left: 10px;
 	width: 380px;
@@ -69,24 +70,26 @@
 	text-align: left;
 	padding-left: 14px;	
 	padding-top: 14px;
+	padding-bottom: 0;
 }
 
-#input_prizes {
-}
-
-#text_prizes, #text_tech, #text_intro {
+#text_prizes, #text_tech, #text_intro, #text_join {
 	position: relative;
-	top: -57px;
+	top: -58px;
 }
 
 #line_prizes, #line_tech {
 	position: relative;
 	left: -28px;
+
+	height: 84px;
 }
 
-#line_intro {
+#line_intro, #line_join {
 	position: relative;
 	left: -56px;
+
+	height: 84px;
 }
 
 #line_gpa {
@@ -98,6 +101,10 @@
 	margin-bottom: 0;
 	margin-top: 0;
 	height: 40px;
+}
+
+#line_join {
+	margin-bottom: 48px;
 }
 
 #female {
@@ -169,4 +176,24 @@
 
 #m_join {
 	border-bottom: 1px solid #FA8823;
+}
+
+#submit {
+	position: relative;
+	left: 588px;
+
+	width: 248px;
+	height: 40px;
+
+	margin-bottom: 40px;	
+	border: 0;
+	border-radius: 3px;
+	background: #FA8823;
+
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.footer, #footer {
+	background: 0;
 }
