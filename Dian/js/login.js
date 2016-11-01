@@ -87,6 +87,7 @@ function codeGet() {
         if (phoneNum == "") {
             $("#account").addClass("error");
         } else {
+            time(codeBtn);
             $.post("http://120.76.117.125:90/sendmsg/sendregmsg", {
                 "phone": phoneNum
             }, function (res) {
@@ -94,11 +95,10 @@ function codeGet() {
                 var resultData = resultObj.result;
                 if (resultData != undefined) {
                     var status = resultData.success;
-                    if (status) {
-                        time(codeBtn);
-                    }
                 }
             });
+
+
         }
     });
 
