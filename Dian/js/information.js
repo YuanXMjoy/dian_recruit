@@ -1,6 +1,8 @@
 /**
  * Created by JOYyuan on 16/11/1.
  */
+
+//此页要用电话好嘛检查一下是否登录过。此外退出的功能还没做，还有浏览器前进和后退的处理；
 $(document).ready(function(){
     $("#applyForm").validate({
         debug:false,
@@ -19,6 +21,9 @@ $(document).ready(function(){
                 required:true
             },
             grade:{
+                required:true
+            },
+            failure:{
                 required:true
             },
             input_tel:{
@@ -51,7 +56,6 @@ $(document).ready(function(){
             },
             input_join:{
                 required:true
-
             }
 
         },
@@ -82,6 +86,9 @@ $(document).ready(function(){
             grade:{
                 required:"请选择您的年级"
             },
+            failure:{
+                required:"请选择是否挂过科"
+            },            
             input_major:{
                 required:"请填写专业"
             },
@@ -90,7 +97,6 @@ $(document).ready(function(){
             },
             input_prizes:{
                 required:"请填写奖项"
-
             },
             input_tech:{
                 required:"请说明您的技术积累"
@@ -161,6 +167,8 @@ function sendInformation(name,uid,sex,phone,email,major,level,fail_course,score,
         var status=result.status;
         var msg=result.msg;
         alert(status&&msg);
-        Window.location="arrange.html";
+        window.location.href = 'arrange.html';
+
     });
+
 }
