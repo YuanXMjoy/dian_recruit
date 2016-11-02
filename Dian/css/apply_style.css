@@ -23,8 +23,8 @@ label.error {
 }
 #sex-error {
     position: absolute;
-    left: 730px;
-    top: 320px;
+    left: 750px;
+    top: 322px;
 
     white-space: nowrap;
     z-index: 1;
@@ -33,7 +33,7 @@ label.error {
 #grade-error{
     position: absolute;
     left: 810px;
-    top: 585px;
+    top: 587px;
 
     white-space: nowrap;
     z-index: 1;    
@@ -202,7 +202,7 @@ input[type="radio"]:checked {
 
 #input_grade_14, #input_grade_13 {
     position: relative;
-    left: 42px;
+    left: 46px; /*mac 42px*/
 }
 
 .input_grade_1516 {
@@ -224,7 +224,7 @@ input[type="radio"]:checked {
 
 .input_grade_1314 p {
     position: relative;
-    left: 32px;
+    left: 36px; /*mac 32px*/
 }
 
 .input_grade_1516 p, .input_grade_1314 p {
@@ -260,6 +260,15 @@ input[type="radio"]:checked {
 #fail_text_n {
     position: relative;
     left: -12px;
+}
+
+#failure-error {
+    position: absolute;
+    left: 750px;
+    top: 654px;
+
+    white-space: nowrap;
+    z-index: 1;    
 }
 
 #title {

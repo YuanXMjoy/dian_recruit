@@ -23,6 +23,9 @@ $(document).ready(function(){
             grade:{
                 required:true
             },
+            failure:{
+                required:true
+            },
             input_tel:{
                 required:true,
                 minlength:11,
@@ -53,7 +56,6 @@ $(document).ready(function(){
             },
             input_join:{
                 required:true
-
             }
 
         },
@@ -84,6 +86,9 @@ $(document).ready(function(){
             grade:{
                 required:"请选择您的年级"
             },
+            failure:{
+                required:"请选择是否挂过科"
+            },            
             input_major:{
                 required:"请填写专业"
             },
@@ -92,7 +97,6 @@ $(document).ready(function(){
             },
             input_prizes:{
                 required:"请填写奖项"
-
             },
             input_tech:{
                 required:"请说明您的技术积累"
