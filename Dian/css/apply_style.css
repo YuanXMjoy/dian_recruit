@@ -1,4 +1,4 @@
-/*.error {
+.error {
     margin-left: 28px;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     right: 448px;
     margin-top: 24px;
-}*/
+}
 .content {
     height: auto;
     margin: 0;
