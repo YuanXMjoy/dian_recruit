@@ -189,6 +189,7 @@ function checkInfo(num) {
             window.location="loggedIn.html";
         }else{
             window.location="arrange.html";
+            sessionStorage.uid=uid;
         }
     })
 }

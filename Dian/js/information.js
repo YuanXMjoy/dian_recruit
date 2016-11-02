@@ -8,7 +8,7 @@ $(document).ready(function(){
             input_name: {
                 required: true,
                 minlength:1,
-                maxlength:5
+                maxlength:15
             },
             input_uid: {
                 required:true,
@@ -134,9 +134,11 @@ function getInformation(){
         var major=$("#input_major").val();
         var gpa=$("#input_gpa").val();
         var prize=$("#input_prizes").val();
-        var accumulate=$("#input_intro").val();
+        var tech=$("#input_tech").val();
+        var simpleInfo=$("#input_intro").val();
         var future=$("#input_join").val();
-        sendInformation(applyName,uid,sex,phoneNum,email,major,gpa,prize,accumulate,future);
+        var fail_course=0;
+        sendInformation(applyName,uid,sex,phoneNum,email,major,stuGrade,fail_course,gpa,prize,tech,simpleInfo,future);
     });
 }
 function sendInformation(name,uid,sex,phone,email,major,level,fail_course,score,champion,skills,featueres,plan){
@@ -152,7 +154,7 @@ function sendInformation(name,uid,sex,phone,email,major,level,fail_course,score,
         "score":score,
         "champion":champion,
         "skills":skills,
-        "feeatures":featueres,
+        "features":featueres,
         "plan":plan
 
     },function(res){
@@ -160,5 +162,6 @@ function sendInformation(name,uid,sex,phone,email,major,level,fail_course,score,
         var status=result.status;
         var msg=result.msg;
         alert(status&&msg);
+        Window.location="arrange.html";
     });
 }
