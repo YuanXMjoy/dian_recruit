@@ -1,4 +1,4 @@
-.error {
+/*.error {
     margin-left: 28px;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     right: 448px;
     margin-top: 24px;
-}
+}*/
 .content {
     height: auto;
     margin: 0;
@@ -31,6 +31,39 @@
     border-radius: 3px;
 }
 
+input[type="text"], textarea{
+    background-color: #FFFCF9;
+}
+
+#input_sex_f, #input_sex_m {
+}
+
+input[type="radio"], #input_sex_f, #input_sex_m {
+    -webkit-appearance: none;
+
+    border: 1px solid #A18864;
+
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+
+    background-color: #FFFCF9;
+    box-shadow: 0 0 2px #A18864;
+    outline: none;
+}
+
+input[type="radio"]:checked,
+#input_sex_f:checked,
+#input_sex_m:checked {
+    background-color: #FA8823;
+    border: 5px solid #FFFCF9;
+}
+
+input[type="radio"]:checked {
+    position: relative;
+    top: -1;
+}
+
 .fillin_item, .check_item, #title {
     margin: 0;
     padding: 0;
@@ -41,15 +74,7 @@
     margin-top: 24px;
 }
 
-.fillin_item input, #female {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-.check_item p {
-    display: inline-block;
-
+.fillin_item input,#female {
     margin: 0;
     padding: 0;
     border: 0;
@@ -57,6 +82,10 @@
 
 .fillin_item p, .check_item p {
     display: inline-block;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
 
     font-size: 14px;
     color: #393939;
@@ -94,7 +123,7 @@
 
 #text_prizes, #text_tech, #text_intro, #text_join {
     position: relative;
-    top: -58px;
+    top: -56px;
 }
 
 #line_prizes, #line_tech {
@@ -117,9 +146,10 @@
 }
 
 #line_sex {
+    display: inline-block;
     margin-bottom: 0;
     margin-top: 0;
-    height: 40px;
+    vertical-align: middle;
 }
 
 #line_join {
@@ -148,6 +178,10 @@
     margin: 0;
     padding: 0;
     margin-right: 20px;
+}
+
+#input_sex_m, #input_sex_f {
+    top: 6px;
 }
 
 #input_grade_14, #input_grade_13 {
@@ -208,9 +242,15 @@
     border: 0;
     border-radius: 3px;
     background: #FA8823;
+    box-shadow: 5px 5px 10px rgb(104, 104, 104);
 
     font-size: 12px;
     color: #FFFFFF;
+}
+
+.fillin_item p {
+    position: relative;
+    top: 0px;
 }
 
 .footer, #footer {
