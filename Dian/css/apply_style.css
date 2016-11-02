@@ -24,7 +24,7 @@ label.error {
 #sex-error {
     position: absolute;
     left: 750px;
-    top: 322px;
+    top: 319px;
 
     white-space: nowrap;
     z-index: 1;
@@ -36,7 +36,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 #grade-error{
     position: absolute;
     left: 810px;
-    top: 587px;
+    top: 584px;
 
     white-space: nowrap;
     z-index: 1;    
@@ -268,7 +268,7 @@ input[type="radio"]:checked {
 #failure-error {
     position: absolute;
     left: 750px;
-    top: 654px;
+    top: 651px;  /*win chrome 654px*/
 
     white-space: nowrap;
     z-index: 1;    
