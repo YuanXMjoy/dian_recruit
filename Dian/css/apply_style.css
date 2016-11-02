@@ -265,3 +265,23 @@ input[type="radio"]:checked {
 #code{
     background-color: #FFFFFF;
 }
+#exitBtn{
+    width: 56px;
+    height:32px ;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    top:16px;
+    color: #b5b5b5;
+    background-color: #fffcf6;
+    border: 1.2px solid #ACACAC;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#userP{
+    position: absolute;
+    font-size: 12px;
+    right: 100px;
+    top:16px;
+    color: #acacac;
+}

@@ -6,8 +6,6 @@ var errorCode;
 var loginCode;
 
 $(document).ready(function () {
-        $("#arrangeModel").hide();
-        $("#applyForm").hide();
         codeGet();
         register();
         login();
@@ -95,8 +93,8 @@ function codeGet() {
             }, function (res) {
                 var resultObj = JSON.parse(res);
                 var status = resultObj.status;
-                var msg=resultObj.msg;
-                if(status) {
+                var msg = resultObj.msg;
+                if (status) {
                     time(codeBtn);
                 }
             });
@@ -140,6 +138,7 @@ function register() {
                 switch (status) {
                     case 0:
                         alert("注册成功");
+                        checkInfo(account);
                         break;
                     case 1:
                         alert("验证码错误");
@@ -170,10 +169,8 @@ function login() {
                 var status = resultObj.status;
                 if (status == 0) {
                     alert("登录成功！");
-                    sessionStorage.user=user;
-                    $("#joinUs").hide();
-                    $("#applyForm").show();
-                    $("#applyFooter").hide();
+                    sessionStorage.user = user;
+                    checkInfo(user);
                 } else {
                     alert("登录失败！");
                 }
@@ -182,4 +179,16 @@ function login() {
     });
 }
 
-
+function checkInfo(num) {
+    $.post("http://120.76.117.125:90/user/getuserbyph", {
+        "phone":num
+    }, function (resUid) {
+        var resultObj=JSON.parse(resUid);
+        var uid=resultObj.uid;
+        if(uid==""){
+            window.location="loggedIn.html";
+        }else{
+            window.location="arrange.html";
+        }
+    })
+}

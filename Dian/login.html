@@ -13,7 +13,6 @@
     <script src="js/join_css.js"></script>
     <script src="js/menubar_css.js"></script>
     <script src="js/login.js"></script>
-    <script src="js/information.js"></script>
     <title>加入我们</title>
 </head>
 <body>
@@ -28,6 +27,8 @@
         <li id="m_dian"><a href="http://dian.hust.edu.cn" target="_blank">了解Dian</a></li>
         <li id="m_join"><a href="login.html">加入我们</a></li>
     </ul>
+
+
 </div>
 
 <div class="mainBox">
@@ -43,7 +44,7 @@
                 <div class="InBox">
                     <div class="username">
                         <i class="user"></i>
-                        <input id="userId" type="text" name="username" placeholder="手机/邮箱/学号"   >
+                        <input id="userId" type="text" name="username" placeholder="手机"   >
                     </div>
                     <div class="password">
                         <i class="pwd"></i>
@@ -72,105 +73,6 @@
         </div>
     </div>
 
-    <div id="arrangeModel" class="arrange">
-        <div class="arrangeBox">
-            <div class="applyBox">
-                <div class="arrangeStatus">已通过</div>
-                <p class="arrangeItem">网申</p>
-                <p class="arrangeTime">截至时间:<br>2016.11.13 24:00</p><br>
-                <a class="applyBtn">点击此处报名</a>
-            </div>
-            <div class="noteTest">
-                <div class="arrangeStatus">已通过</div>
-                <p class="arrangeItem">笔试</p>
-                <p class="arrangeTime">时间:11.14 19:00<br>地点：启明学院亮胜楼401</p>
-            </div>
-            <div class="interview">
-                <div class="arrangeStatus">已通过</div>
-                <p class="arrangeItem">面试</p>
-                <p class="arrangeTime">时间:11.14 19:00<br>地点：启明学院亮胜楼401</p>
-            </div>
-            <div class="nightTest">
-                <div class="arrangeStatus">已通过</div>
-                <p class="arrangeItem">通宵测试</p>
-                <p class="arrangeTime">时间:11.14 19:00<br>地点：启明学院亮胜楼401</p>
-            </div>
-            <div class="applyStatus">
-                <div class="arrangeStatus">已通过</div>
-                <p class="arrangeItem">录取状态</p>
-                <p class="arrangeTime">时间:11.14 19:00</p>
-            </div>
-        </div>
-    </div>
-
-    <form id="applyForm">
-        <div class="content">
-            <p id="title">Dian团队2016年秋季招新报名表</p>
-            <div class="fillin_item">
-                <p>姓名</p>
-                <input type="text" name="input_name" id="input_name" placeholder="请填写姓名"maxlength="10">
-            </div>
-            <div class="fillin_item">
-                <p>学号</p>
-                <input type="text" name="input_uid" id="input_uid" placeholder="请填写学号" maxlength="10">
-            </div>
-            <div class="fillin_item" id="line_sex">
-                <p>性别</p>
-                <input type="radio" name="sex" id="input_sex_f" value="0">
-                <p id="female">女</p>
-                <input type="radio" name="sex" id="input_sex_m" value="1">
-                <p>男</p>
-            </div>
-            <div class="fillin_item">
-                <p id="tel">联系电话</p>
-                <input type="text" name="input_tel" id="input_tel" placeholder="请填写联系电话" maxlength="11">
-            </div>
-            <div class="fillin_item">
-                <p id="mail">联系邮箱</p>
-                <input type="text" name="input_mail" id="input_mail" placeholder="请填写邮箱" maxlength="30">
-            </div>
-            <div class="fillin_item">
-                <p>专业</p>
-                <input type="text" name="input_major" id="input_major" placeholder="请填写专业" maxlength="30">
-            </div>
-            <div class="check_item">
-                <div class="input_grade_1516">
-                    <p>年级</p>
-                    <input type="radio" name="grade" id="input_grade_16" value="2016" >
-                    <p id="text_16">2016级</p>
-                    <input type="radio" name="grade" id="input_grade_15" value="2015">
-                    <p>2015级</p>
-                </div>
-                <div class="input_grade_1314">
-                    <input type="radio" name="grade" id="input_grade_14" value="2014" >
-                    <p id="text_14">2014级</p>
-                    <input type="radio" name="grade" id="input_grade_13" value="2013" >
-                    <p>2013级</p>
-                </div>
-            </div>
-            <div class="fillin_item" id="line_gpa">
-                <p>最近学期加权</p>
-                <input type="text" name="input_gpa" id="input_gpa" placeholder="请填写加权" maxlength="5">
-            </div>
-            <div class="fillin_item" id="line_prizes">
-                <p id="text_prizes">曾获奖项</p>
-                <textarea id="input_prizes" name="input_prizes" placeholder="数学／物理／计算机方面"></textarea>
-            </div>
-            <div class="fillin_item" id="line_tech">
-                <p id="text_tech">技术积累</p>
-                <textarea id="input_tech" name="input_tech" placeholder="主要介绍完成的作品、擅长的技术方向、感兴趣的技术内容等"></textarea>
-            </div>
-            <div class="fillin_item" id="line_intro">
-                <p id="text_intro">个人综合简介</p>
-                <textarea id="input_intro" name="input_intro" placeholder="主要介绍性格特点、工作作风、团队精神等"></textarea>
-            </div>
-            <div class="fillin_item" id="line_join">
-                <p id="text_join">加入团队打算</p>
-                <textarea id="input_join" name="input_join" placeholder="结合你对Dian团队的认识，描述你加入Dian团队后的打算"></textarea>
-            </div>
-            <button id="submit">提交报名表</button>
-        </div>
-    </form>
 </div>
 <div id="applyFooter" class="footer">
     <div id="contactD">

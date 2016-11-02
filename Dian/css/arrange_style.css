@@ -102,6 +102,28 @@
     font-size: 20px;
 
 }
+#exitBtn{
+    width: 56px;
+    height:32px ;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    top:16px;
+    color: #b5b5b5;
+    background-color: #ffffff;
+    border-color: #ffaf2b;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#userP{
+    position: absolute;
+    font-size: 12px;
+    right: 100px;
+    top:16px;
+    color: #cccccc;
+}
+
+
 
 .arrangeTime {
     color: #4A4A4A;
