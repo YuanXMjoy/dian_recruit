@@ -30,6 +30,9 @@ label.error {
     z-index: 1;
 }
 
+_::-webkit-full-page-media, _:future, :root .safari_only {
+}
+
 #grade-error{
     position: absolute;
     left: 810px;
