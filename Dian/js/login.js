@@ -137,7 +137,7 @@ function register() {
                 errorCode = false;
                 switch (status) {
                     case 0:
-                        alert("注册成功");
+                        alert("注册成功!");
                         checkInfo(account);
                         break;
                     case 1:
@@ -186,9 +186,11 @@ function checkInfo(num) {
         var resultObj=JSON.parse(resUid);
         var uid=resultObj.uid;
         if(uid==""){
-            window.location="loggedIn.html";
+            sessionStorage.user=num;
+            window.location.href="loggedIn.html";
         }else{
-            window.location="arrange.html";
+            sessionStorage.user=num;
+            window.location.href="arrange.html";
             sessionStorage.uid=uid;
         }
     })

@@ -1,6 +1,8 @@
 /**
  * Created by JOYyuan on 16/11/1.
  */
+
+//此页要用电话好嘛检查一下是否登录过。此外退出的功能还没做，还有浏览器前进和后退的处理；
 $(document).ready(function(){
     $("#applyForm").validate({
         debug:false,
@@ -161,6 +163,8 @@ function sendInformation(name,uid,sex,phone,email,major,level,fail_course,score,
         var status=result.status;
         var msg=result.msg;
         alert(status&&msg);
-        Window.location="arrange.html";
+        window.location.href = 'arrange.html';
+
     });
+
 }
