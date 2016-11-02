@@ -1,23 +1,42 @@
 .error {
-    margin-left: 28px;
+    color: #ff5849;
 }
 
-#input_tel-error, #input_mail-error {
-    margin-left: 0;
+label.error {
+    position: relative;
+    left: 28px;
+}
+
+#input_mail-error, #input_tel-error {
+    left: 0;
 }
 
 #input_prizes-error, #input_tech-error, #input_intro-error, #input_join-error {
+    left: 38px;
+}
+
+#input_prizes-error, #input_tech-error, #input_intro-error, #input_join-error {
+   position: relative;
+   top: -56px;
+
    margin-bottom:20px;
 }
-#sex-error{
+#sex-error {
     position: absolute;
-    right: 448px;
-    margin-top: 12px;
+    left: 730px;
+    top: 320px;
+
+    white-space: nowrap;
+    z-index: 1;
 }
+
 #grade-error{
     position: absolute;
-    right: 448px;
-    margin-top: 24px;
+    left: 810px;
+    top: 585px;
+
+    white-space: nowrap;
+    z-index: 1;    
 }
 .content {
     height: auto;
@@ -33,9 +52,6 @@
 
 input[type="text"], textarea{
     background-color: #FFFCF9;
-}
-
-#input_sex_f, #input_sex_m {
 }
 
 input[type="radio"], #input_sex_f, #input_sex_m {
@@ -181,7 +197,7 @@ input[type="radio"]:checked {
 }
 
 #input_sex_m, #input_sex_f {
-    top: 6px;
+    top: 5px;
 }
 
 #input_grade_14, #input_grade_13 {
@@ -242,7 +258,7 @@ input[type="radio"]:checked {
     border: 0;
     border-radius: 3px;
     background: #FA8823;
-    box-shadow: 5px 5px 10px rgb(104, 104, 104);
+    box-shadow: 2px 2px 3px #B35914;
 
     font-size: 12px;
     color: #FFFFFF;
