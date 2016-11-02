@@ -173,6 +173,7 @@ function login() {
                     sessionStorage.user=user;
                     $("#joinUs").hide();
                     $("#applyForm").show();
+                    $("#applyFooter").hide();
                 } else {
                     alert("登录失败！");
                 }

@@ -256,3 +256,12 @@ input[type="radio"]:checked {
 .footer, #footer {
     background: 0;
 }
+#userId{
+    background-color: #FFFFFF;
+}
+#account{
+    background-color: #ffffff;
+}
+#code{
+    background-color: #FFFFFF;
+}
