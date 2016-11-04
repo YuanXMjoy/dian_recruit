@@ -2,9 +2,20 @@ body {
 	width: 1440px;
 	margin: 0 auto;
 	background-image: url('../img/process.png');
-	background-position: center 64px;
 	background-size: 1440px 640px;
 	background-repeat: no-repeat;		
+}
+
+@media screen and (min-width: 1440px){
+	body {
+		background-position: center 64px;	
+	}
+}
+
+@media screen and (max-width: 1440px){
+	body {
+		background-position: 0 64px;	
+	}
 }
 
 .poster {
@@ -14,6 +25,7 @@ body {
 }
 
 .joinUs {
+	display: block;
 	position: relative;
 	top: 46%;
 	left: 41.5%;
