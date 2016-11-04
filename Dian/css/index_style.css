@@ -1,7 +1,7 @@
 body {
 	width: 1440px;	
 	height: auto;
-	margin: 0 auto;
+	margin: auto !important;
 }
 
 .navi {
@@ -118,6 +118,7 @@ body {
 
 #tm p {
 	margin: 0;
+	text-align: center;
 }
 
 #qgroup {

@@ -2,7 +2,7 @@ body {
 	width: 1440px;
 	margin: 0 auto;
 	background-image: url('../img/process.png');
-	background-position: 0 64px;
+	background-position: center 64px;
 	background-size: 1440px 640px;
 	background-repeat: no-repeat;		
 }

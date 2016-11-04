@@ -7,7 +7,7 @@
  */
 html.fp-enabled,
 .fp-enabled body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     overflow:hidden;
 

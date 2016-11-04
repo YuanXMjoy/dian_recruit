@@ -57,76 +57,46 @@ h1{
     color: #FA8823;
     font-size: 42px;
 }
-.introduceBox1_mobile{
-    position:absolute;
-    top:20%;
-    right: 31%;
-    text-align: center;
-    color: #5d5d5d;
-}
-.introduceBox1_chuangye{
-    position:absolute;
-    top:20%;
-    right: 31%;
-    text-align: center;
-}
-.introduceBox1_meiguo {
-    position:absolute;
-    top:20%;
-    right: 25%;
-    text-align: center;    
-}
 
-.introduceBox2{
-    position:absolute;
-    top:20%;
-    left: 33%;
-    text-align: center;
-}
-
-.introduceBox2_smartSan {
-    position:absolute;
-    top:20%;
-    left: 26%;
-    text-align: center;    
-}
-.introduceBox1_huaWei{
-    position:absolute;
-    top:18%;
-    right: 14%;
-    text-align: center;
-}
 .textBox1{   
     position:absolute;
-    top:33%;
-    right: 16%;
+    top:25%;
+    right: 17%;
     text-align: justify;     
     width: 480px;
 }
 .textBox1_chuangye{
     position:absolute;
-    top:33%;
-    right: 16%;
+    top:25%;
+    right: 17%;
     text-align: justify;
     width: 478px;
 }
 .textBox1_meiguo{
     position:absolute;
-    top:32%;
-    right: 15%;
+    top:24%;
+    right: 16%;
 }
 .textBox1_huaWei{
     position:absolute;
-    top:39%;
-    right: 16%;
+    top:23%;
+    right: 14%;
     text-align: justify;
-    width: 478px;
+    width: 520px;
 }
 .textBox2{
     position:absolute;
-    top:33%;
-    left: 18%;
+    top:27%;
+    left: 17%;
     text-align: justify;    
     overflow: hidden;
     width: 477px;
+}
+
+.group_name_l {
+    text-align: right;
+}
+
+.group_name_r {
+    text-align: left;
 }
