@@ -60,64 +60,73 @@ h1{
 .introduceBox1_mobile{
     position:absolute;
     top:20%;
-    right: 28%;
+    right: 31%;
     text-align: center;
     color: #5d5d5d;
 }
 .introduceBox1_chuangye{
     position:absolute;
     top:20%;
-    right: 28%;
+    right: 31%;
     text-align: center;
 }
 .introduceBox1_meiguo {
     position:absolute;
     top:20%;
-    right: 22%;
+    right: 25%;
     text-align: center;    
 }
 
 .introduceBox2{
     position:absolute;
     top:20%;
-    left: 16%;
+    left: 33%;
     text-align: center;
 }
 
 .introduceBox2_smartSan {
     position:absolute;
     top:20%;
-    left: 15%;
+    left: 26%;
     text-align: center;    
 }
 .introduceBox1_huaWei{
     position:absolute;
     top:18%;
-    right: 15%;
+    right: 14%;
     text-align: center;
 }
-.textBox1{
+.textBox1{   
     position:absolute;
     top:33%;
-    right: 5%;
+    right: 16%;
+    text-align: justify;     
+    width: 480px;
 }
 .textBox1_chuangye{
     position:absolute;
     top:33%;
-    right: 13%;
+    right: 16%;
+    text-align: justify;
+    width: 478px;
 }
 .textBox1_meiguo{
     position:absolute;
     top:32%;
-    right: 13%;
+    right: 15%;
 }
 .textBox1_huaWei{
     position:absolute;
     top:39%;
-    right: 13%;
+    right: 16%;
+    text-align: justify;
+    width: 478px;
 }
 .textBox2{
     position:absolute;
     top:33%;
-    left: 15%;
+    left: 18%;
+    text-align: justify;    
+    overflow: hidden;
+    width: 477px;
 }
