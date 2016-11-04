@@ -1,6 +1,12 @@
 body{
     font-family: arial, helvetica, sans-serif;
 }
+
+p {
+    line-height: 22px;
+    font-size: 16px;
+    color: #7B6B5F;
+}
 .circle,.circleImg{
     display: inline-block;
     width: 160px;
