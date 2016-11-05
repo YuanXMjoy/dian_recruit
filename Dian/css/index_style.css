@@ -43,6 +43,7 @@ body {
 		padding-right: 30px; 
 		text-align: center;
 		padding-bottom: 23px;
+		cursor: pointer;
 	}
 	.menu a{
 		color: #7C6C61;
