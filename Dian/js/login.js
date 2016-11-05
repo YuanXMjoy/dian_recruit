@@ -6,9 +6,11 @@ var errorCode;
 var loginCode;
 
 $(document).ready(function () {
+        javascript:window.history.forward(1);
         codeGet();
         register();
         login();
+        backspace();
     }
 );
 function isInteger(obj) {
@@ -194,4 +196,25 @@ function checkInfo(num) {
             sessionStorage.uid=uid;
         }
     })
+}
+function backspace() {
+
+    if (event.keyCode == 8 && event.srcElement.tagName != "INPUT" && event.srcElement.type != "text")
+
+        event.returnValue = false;
+
+}
+
+if (navigator.appName == "Microsoft Internet Explorer") {
+
+    window.history.forward(1);
+
+}
+
+else // if it is Mozilla than
+
+{
+
+    window.history.forward(-1);
+
 }

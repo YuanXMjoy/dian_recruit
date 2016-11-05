@@ -110,88 +110,112 @@ function checkStatus(stuid) {
             "uid": stuid
         },
         function (obj) {
-            var status=JSON.parse(obj);
-            jlStatus=Number(status.jl);
-            bsStatus=Number(status.bs);
-            msStatus=Number(status.ms);
-            txStatus=Number(status.txcs);
-            lqStatus=Number(status.lq);
+            var status = JSON.parse(obj);
+            jlStatus = Number(status.jl);
+            bsStatus = Number(status.bs);
+            msStatus = Number(status.ms);
+            txStatus = Number(status.txcs);
+            lqStatus = Number(status.lq);
             putStatus();
         });
 
 }
-function putStatus(){
+function putStatus() {
     var jl;
     var bs;
     var ms;
     var txcs;
     var lq;
-    switch (jlStatus){
+    switch (jlStatus) {
         case 0:
-            jl="未开始";
+            jl = "未开始";
+            $("#netStatus").attr("class", "unstart");
             break;
         case 1:
-            jl="审核中";
+            jl = "审核中";
+            $("#netStatus").attr("class", "check");
             break;
         case 2:
-            jl="已通过";
+            jl = "已通过";
+            $("#netStatus").attr("class", "pass");
             break;
         case 3:
-            jl="未通过";
+            jl = "未通过";
+            $("#netStatus").attr("class", "fail");
             break;
     }
     $("#netStatus").html(jl);
-    switch (bsStatus){
+    switch (bsStatus) {
         case 0:
-            bs="未开始";
+            bs = "未开始";
+            $("#noteStatus").attr("class", "unstart");
             break;
         case 1:
-            bs="审核中";
+            bs = "审核中";
+            $("#noteStatus").attr("class", "check");
             break;
         case 2:
-            bs="已通过";
+            bs = "已通过";
+            $("#noteStatus").attr("class", "pass");
             break;
         case 3:
-            bs="未通过";
+            bs = "未通过";
+            $("#noteStatus").attr("class", "fail");
+
             break;
     }
     $("#noteStatus").html(bs);
-    switch (msStatus){
+    switch (msStatus) {
         case 0:
-            ms="未开始";
+            ms = "未开始";
+            $("#viewStatus").attr("class", "unstart");
             break;
         case 1:
-            ms="审核中";
+            ms = "审核中";
+            $("#viewStatus").attr("class", "check");
+
             break;
         case 2:
-            ms="已通过";
+            ms = "已通过";
+            $("#viewStatus").attr("class", "pass");
             break;
         case 3:
-            ms="未通过";
+            ms = "未通过";
+            $("#viewStatus").attr("class", "fail");
             break;
     }
     $("#viewStatus").html(ms);
-    switch (txStatus){
+    switch (txStatus) {
         case 0:
-            txcs="未开始";
+            txcs = "未开始";
+            $("#nightStatus").attr("class", "unstart");
+
             break;
         case 1:
-            txcs="审核中";
+            txcs = "审核中";
+            $("#nightStatus").attr("class", "check");
+
             break;
         case 2:
-            txcs="已通过";
+            txcs = "已通过";
+            $("#nightStatus").attr("class", "pass");
+
             break;
         case 3:
-            txcs="未通过";
+            txcs = "未通过";
+            $("#nightStatus").attr("class", "fail");
+
             break;
     }
     $("#nightStatus").html(txcs);
-    switch (lqStatus){
+    switch (lqStatus) {
         case 0:
-            lq="未开始";
+            lq = "未开始";
+            $("#passStatus").attr("class", "unstart");
             break;
         case 1:
-            lq="录取";
+            lq = "录取";
+            $("#passStatus").attr("class", "lq");
             break;
 
     }
