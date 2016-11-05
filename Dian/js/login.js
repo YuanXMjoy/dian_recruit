@@ -147,6 +147,7 @@ function register() {
                         break;
                     case 2:
                         alert("该手机号码已注册，密码已覆盖");
+                        checkInfo(account);
                         break;
                     case 3:
                         alert("验证码已经过期");
@@ -170,11 +171,10 @@ function login() {
                 var resultObj = JSON.parse(res);
                 var status = resultObj.status;
                 if (status == 0) {
-                    alert("登录成功！");
                     sessionStorage.user = user;
                     checkInfo(user);
                 } else {
-                    alert("登录失败！");
+                    alert("请检查输入是否正确！")
                 }
             });
         }
