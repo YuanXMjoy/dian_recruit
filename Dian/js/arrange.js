@@ -19,7 +19,15 @@ var apEmail;
 var apMajor;
 var prize;
 $(document).ready(function () {
-    $("#userP").html(phone);
+    if(phone==undefined){
+        $("body").hide();
+    }else{
+        $("body").show();
+        $("#userP").html(phone);
+    }
+    $("#exitBtn").click(function(){
+        window.location.href="login.html"
+    });
     applyInfo();
 
 });
