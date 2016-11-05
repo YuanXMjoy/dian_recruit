@@ -10,7 +10,7 @@
     width: 526px;
     height: 352px;
     left: 50%;
-    box-shadow: 6px 6px 26px 0 #B35914;
+    box-shadow: 6px 6px 26px 0 rgba(179,89,20,0.15);
 }
 
 .leftBox {
