@@ -185,7 +185,7 @@ function checkInfo(num) {
     }, function (resUid) {
         var resultObj=JSON.parse(resUid);
         var uid=resultObj.uid;
-        if(uid==""){
+        if(uid==undefined){
             sessionStorage.user=num;
             window.location.href="loggedIn.html";
         }else{

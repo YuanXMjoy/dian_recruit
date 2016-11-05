@@ -18,15 +18,23 @@ var sex;
 var apEmail;
 var apMajor;
 var prize;
+
+var jlStatus;
+var msStatus;
+var bsStatus;
+var txStatus;
+var lqStatus;
+
+
 $(document).ready(function () {
-    if(phone==undefined){
+    if (phone == undefined) {
         $("body").hide();
-    }else{
+    } else {
         $("body").show();
         $("#userP").html(phone);
     }
-    $("#exitBtn").click(function(){
-        window.location.href="login.html"
+    $("#exitBtn").click(function () {
+        window.location.href = "login.html"
     });
     applyInfo();
 
@@ -37,7 +45,8 @@ function applyInfo() {
     });
     if (uid == undefined) {
 
-    }else{
+    } else {
+        checkStatus(uid);
         getInfo(phone);
     }
 }
@@ -59,7 +68,7 @@ function getInfo(num) {
         apEmail = resObj.email;
         apMajor = resObj.major;
         prize = resObj.champion;
-        putInfo(stuId,applyName,applyPh,level,gpa,failC,tech,cv,plan,sex,apEmail,apMajor,prize);
+        putInfo(stuId, applyName, applyPh, level, gpa, failC, tech, cv, plan, sex, apEmail, apMajor, prize);
 
     });
 
@@ -94,4 +103,97 @@ function putInfo(stuId, apName, apPh, level, gpa, failC, tech, cv, plan, sex, ap
         }
     }
 
+}
+function checkStatus(stuid) {
+    $.post("http://120.76.117.125:90/user/userinfo",
+        {
+            "uid": stuid
+        },
+        function (obj) {
+            var status=JSON.parse(obj);
+            jlStatus=Number(status.jl);
+            bsStatus=Number(status.bs);
+            msStatus=Number(status.ms);
+            txStatus=Number(status.txcs);
+            lqStatus=Number(status.lq);
+            putStatus();
+        });
+
+}
+function putStatus(){
+    var jl;
+    var bs;
+    var ms;
+    var txcs;
+    var lq;
+    switch (jlStatus){
+        case 0:
+            jl="未开始";
+            break;
+        case 1:
+            jl="审核中";
+            break;
+        case 2:
+            jl="已通过";
+            break;
+        case 3:
+            jl="未通过";
+            break;
+    }
+    $("#netStatus").html(jl);
+    switch (bsStatus){
+        case 0:
+            bs="未开始";
+            break;
+        case 1:
+            bs="审核中";
+            break;
+        case 2:
+            bs="已通过";
+            break;
+        case 3:
+            bs="未通过";
+            break;
+    }
+    $("#noteStatus").html(bs);
+    switch (msStatus){
+        case 0:
+            ms="未开始";
+            break;
+        case 1:
+            ms="审核中";
+            break;
+        case 2:
+            ms="已通过";
+            break;
+        case 3:
+            ms="未通过";
+            break;
+    }
+    $("#viewStatus").html(ms);
+    switch (txStatus){
+        case 0:
+            txcs="未开始";
+            break;
+        case 1:
+            txcs="审核中";
+            break;
+        case 2:
+            txcs="已通过";
+            break;
+        case 3:
+            txcs="未通过";
+            break;
+    }
+    $("#nightStatus").html(txcs);
+    switch (lqStatus){
+        case 0:
+            lq="未开始";
+            break;
+        case 1:
+            lq="录取";
+            break;
+
+    }
+    $("#passStatus").html(lq);
 }
