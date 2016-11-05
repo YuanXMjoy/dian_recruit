@@ -1,10 +1,15 @@
+#boxpos_ctrl {
+    display: block;
+    height: 224px;
+    background-color: #FFFCF9;
+    border-top: 1px solid #ECE8E5;
+}
+
 .joinBox {
-    position: absolute;
+    margin: auto;
     width: 526px;
     height: 352px;
-    top: 224px;
     left: 50%;
-    margin-left: -263px;
     box-shadow: 6px 6px 26px 0 #B35914;
 }
 
