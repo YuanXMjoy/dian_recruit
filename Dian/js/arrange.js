@@ -134,6 +134,7 @@ function putStatus() {
         case 1:
             jl = "审核中";
             $("#netStatus").attr("class", "check");
+            console.log(jl);
             break;
         case 2:
             jl = "已通过";

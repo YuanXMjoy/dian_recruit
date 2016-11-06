@@ -107,3 +107,22 @@ h1{
 .group_name_r {
     text-align: left;
 }
+
+
+
+#qgroup.big {
+    margin: 10px 0 10px 0;
+    color: #A18864;
+    font-size: 24px;
+}
+
+#qrcode.big{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    padding-bottom: 50px;
+}
+#qrcodeBig{
+    width: 200px;
+    height: 200px;
+}

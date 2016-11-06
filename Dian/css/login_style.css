@@ -13,14 +13,21 @@
     box-shadow: 6px 6px 26px 0 rgba(179,89,20,0.15);
 }
 
-.leftBox {
+.leftBox-login {
     position: relative;
     width: 240px;
     height: 100%;
     float: left;
-    background-color: #ffaf2b;
+    background-image: url(".././img/I-04.png");
 }
 
+.leftBox-register {
+    position: relative;
+    width: 240px;
+    height: 100%;
+    float: left;
+    background-image: url(".././img/N-05.png");
+}
 .rightBox {
     position: relative;
     width: 286px;

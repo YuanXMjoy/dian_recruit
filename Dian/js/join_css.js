@@ -11,12 +11,16 @@ $(document).ready(function () {
 function statusSelect() {
     $("#select1").click(function () {
         $("#select1").attr("class", "selected");
+        $('#leftBox').removeClass("leftBox-register");
+        $('#leftBox').addClass("leftBox-login");
         $("#select2").removeAttr("class","selected");
         $(".loginBox").show();
         $(".registerBox").hide();
     });
     $("#select2").click(function () {
         $("#select2").attr("class", "selected");
+        $('#leftBox').removeClass("leftBox-login");
+        $('#leftBox').addClass("leftBox-register");
         $("#select1").removeAttr("class","selected");
         $(".loginBox").hide();
         $(".registerBox").show();

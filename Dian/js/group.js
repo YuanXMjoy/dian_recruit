@@ -3,6 +3,8 @@
  */
 $(function(){
     $('#dowebok').fullpage();
+	$("#qgroup").attr("class","big");
+	$("#qrcode").attr("class","big");
 });
 
 $(document).ready(function(){
