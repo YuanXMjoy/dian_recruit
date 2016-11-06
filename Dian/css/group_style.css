@@ -6,60 +6,72 @@ body{
 p {
     line-height: 22px;
     font-size: 16px;
-    color: #7B6B5F;
 }
+
 .circle,.circleImg{
     display: inline-block;
     width: 160px;
     height: 160px;
-    background: url(/../Dian/img/cherry.jpg);
     background-position: 50% 50%;
     background-size: cover;
     border-radius: 50%;
 }
 #mobileGroup{
     position: absolute;
-    top:16%;
-    left: 33%;
+    top:14%;
+    left: 18%;
 }
 #xunceGroup{
     position: absolute;
-    top:16%;
-    right: 33%;
+    top:14%;
+    right: 47%;
 }
 #chuangyeGroup{
     position: absolute;
-    top:45%;
-    left: 10%;
+    top:14%;
+    right: 24%;
 }
+
 #norwayGroup{
     position: absolute;
-    top:45%;
-    left: 33%;
+    top:46%;
+    left:7%;
 }
 #meiguoGroup{
     position: absolute;
-    top:45%;
-    right: 33%;
+    top: 46%;
+    left: 30%;
 }
 #smartSanGroup{
     position: absolute;
-    top:45%;
-    right: 10%;
+    top:46%;
+    right: 35%;
 }
+
+#huaweiGroup {
+    position: absolute;
+    top: 46%;
+    right: 12%;
+}
+
 #xunCe,#norway,#smartSan{
     background-color: #FFE6D0;
 }
 .oddImg{
     position: absolute;
-    top:25%;
-    left: 12%;
+    top:7.5%;    
+    width: 555px;
+    height: 523px;
+    left:5.5%;
 }
 .evenImg{
     position: absolute;
-    top:25%;
-    right: 12%;
+    top:7.5%;
+    width: 555px;
+    height: 523px;    
+    right:5.5%;    
 }
+
 h1{
     color: #FA8823;
     font-size: 42px;
@@ -118,11 +130,11 @@ h1{
 
 #qrcode.big{
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     padding-bottom: 50px;
 }
 #qrcodeBig{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
