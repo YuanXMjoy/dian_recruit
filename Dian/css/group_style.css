@@ -6,6 +6,7 @@ body{
 p {
     line-height: 22px;
     font-size: 16px;
+    color: #7B6B5F;
 }
 
 .circle,.circleImg{
@@ -24,12 +25,12 @@ p {
 #xunceGroup{
     position: absolute;
     top:14%;
-    right: 47%;
+    right: 44%;
 }
 #chuangyeGroup{
     position: absolute;
     top:14%;
-    right: 24%;
+    right: 18%;
 }
 
 #norwayGroup{
@@ -45,13 +46,13 @@ p {
 #smartSanGroup{
     position: absolute;
     top:46%;
-    right: 35%;
+    right: 30.2%;
 }
 
 #huaweiGroup {
     position: absolute;
     top: 46%;
-    right: 12%;
+    right: 7.5%;
 }
 
 #xunCe,#norway,#smartSan{
@@ -137,4 +138,51 @@ h1{
 #qrcodeBig{
     width: 180px;
     height: 180px;
+}
+.circle_text{
+    color: #784927 ;
+    font-size: 24px;
+
+}
+#mobile_text{
+    position: absolute;
+    top:100%;
+    left: 23%;
+    margin-top: 18px;
+}
+#xunce_text{
+    position: absolute;
+    top:108%;
+    right:28%;
+    margin-top: 5.5px;
+}
+#chuangye_text{
+    position: absolute;
+    top:108%;
+    right:18%;
+    margin-top: 5.5px;
+}
+#norway_text{
+    position: absolute;
+    top:108%;
+    right:29%;
+    margin-top: 5.5px;
+}
+#meiguo_text{
+    position: absolute;
+    top:108%;
+    right:11%;
+    margin-top: 5.5px;
+}
+#huasan_text{
+    position: absolute;
+    top:108%;
+    right:28%;
+    margin-top: 5.5px;
+}
+#huawei_text{
+    position: absolute;
+    top:108%;
+    right:28%;
+    margin-top: 5.5px;
 }
