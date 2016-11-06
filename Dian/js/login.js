@@ -6,14 +6,11 @@ var errorCode;
 var loginCode;
 
 $(document).ready(function () {
-
         javascript:window.history.forward(1);
         codeGet();
         register();
         login();
         backspace();
-
-
     }
 );
 function isInteger(obj) {
