@@ -3,7 +3,16 @@
  */
 
 //此页要用电话好嘛检查一下是否登录过。此外退出的功能还没做，还有浏览器前进和后退的处理；
+var userPh=sessionStorage.user;
 $(document).ready(function(){
+    if(userPh==undefined){
+        $("body").hide();
+    }else{
+        $("body").show();
+    }
+    $("#exitBtn").click(function(){
+        window.location.href="login.html"
+    });
     $("#applyForm").validate({
         debug:false,
         rules: {
@@ -66,12 +75,12 @@ $(document).ready(function(){
                 maxlength:"姓名长度太长"
             },
             input_uid:{
-                required:"请输入密码",
+                required:"请输入学号",
                 minlength:"学号位数不对",
                 maxlength:"学号位数不对"
             },
             input_tel:{
-                required:"请输入电话",
+                required:"请输入手机",
                 digits:"格式不对",
                 maxlength:"位数不对",
                 minlength:"位数不对"

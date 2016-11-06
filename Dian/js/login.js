@@ -6,9 +6,11 @@ var errorCode;
 var loginCode;
 
 $(document).ready(function () {
+        javascript:window.history.forward(1);
         codeGet();
         register();
         login();
+        backspace();
     }
 );
 function isInteger(obj) {
@@ -145,6 +147,7 @@ function register() {
                         break;
                     case 2:
                         alert("该手机号码已注册，密码已覆盖");
+                        checkInfo(account);
                         break;
                     case 3:
                         alert("验证码已经过期");
@@ -168,11 +171,10 @@ function login() {
                 var resultObj = JSON.parse(res);
                 var status = resultObj.status;
                 if (status == 0) {
-                    alert("登录成功！");
                     sessionStorage.user = user;
                     checkInfo(user);
                 } else {
-                    alert("登录失败！");
+                    alert("请检查输入是否正确！")
                 }
             });
         }
@@ -185,7 +187,7 @@ function checkInfo(num) {
     }, function (resUid) {
         var resultObj=JSON.parse(resUid);
         var uid=resultObj.uid;
-        if(uid==""){
+        if(uid==undefined){
             sessionStorage.user=num;
             window.location.href="loggedIn.html";
         }else{
@@ -194,4 +196,25 @@ function checkInfo(num) {
             sessionStorage.uid=uid;
         }
     })
+}
+function backspace() {
+
+    if (event.keyCode == 8 && event.srcElement.tagName != "INPUT" && event.srcElement.type != "text")
+
+        event.returnValue = false;
+
+}
+
+if (navigator.appName == "Microsoft Internet Explorer") {
+
+    window.history.forward(1);
+
+}
+
+else // if it is Mozilla than
+
+{
+
+    window.history.forward(-1);
+
 }

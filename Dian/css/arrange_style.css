@@ -109,8 +109,8 @@
     right: 20px;
     top:16px;
     color: #b5b5b5;
-    background-color: #ffffff;
-    border-color: #ffaf2b;
+    background-color: #fffcf6;
+    border: 1.2px solid #ACACAC;
     border-radius: 2px;
     cursor: pointer;
 }
@@ -137,10 +137,13 @@
     cursor: pointer;
 }
 
-.arrangeStatus {
-    width: 44px;
-    height: 20px;
-    font-size: 10px;
+
+#netStatus.unstart,#noteStatus.unstart,#viewStatus.unstart,#nightStatus.unstart,#passStatus.unstart{
+    background-color: #cccccc;
+    text-align: center;
+    width: 48px;
+    height: 16px;
+    font-size: 14px;
     color: #ffffff;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -148,21 +151,60 @@
     margin-top: 2px;
     margin-right: 2px;
 }
-
-.pass {
+#netStatus.pass,#noteStatus.pass,#viewStatus.pass,#nightStatus.pass {
+    width: 48px;
+    height: 16px;
+    font-size: 14px;
+    color: #ffffff;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    margin-top: 2px;
+    margin-right: 2px;
     background-color: #6BC36B;
     text-align: center;
 
 }
 
-.check {
+#netStatus.check ,#noteStatus.check,#viewStatus.check,#nightStatus.check{
+    width: 48px;
+    height: 16px;
+    font-size: 14px;
+    color: #ffffff;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    margin-top: 2px;
+    margin-right: 2px;
     background-color: #FA8823;
     text-align: center;
 }
 
-.fail {
+#netStatus.fail,#noteStatus.fail,#viewStatus.fail,#nightStatus.fail{
+    width: 48px;
+    height: 16px;
+    font-size: 14px;
+    color: #ffffff;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    margin-top: 2px;
+    margin-right: 2px;
     background-color: #FF4933;
 }
+#passStatus.lq{
+    width: 48px;
+    height: 16px;;
+    font-size: 14px;
+    color: #ffffff;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    margin-top: 2px;
+    margin-right: 2px;
+    background-color: #ffd253;
+}
+
 .footer, #footer {
 
     background: #ffffff;
