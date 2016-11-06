@@ -21,6 +21,12 @@
     background-color: #ffaf2b;
 }
 
+#img_N {
+    display: none;
+    position: relative;
+    left: -1px;
+}
+
 .rightBox {
     position: relative;
     width: 286px;

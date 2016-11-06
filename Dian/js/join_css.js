@@ -7,18 +7,24 @@ $(document).ready(function () {
     statusSelect();
     $("#select1").attr("class", "selected");
     $(".registerBox").hide();
+
 });
 function statusSelect() {
     $("#select1").click(function () {
         $("#select1").attr("class", "selected");
         $("#select2").removeAttr("class","selected");
         $(".loginBox").show();
+        $("#img_N").hide();        
+        $("#img_I").show();
         $(".registerBox").hide();
     });
+
     $("#select2").click(function () {
         $("#select2").attr("class", "selected");
         $("#select1").removeAttr("class","selected");
         $(".loginBox").hide();
-        $(".registerBox").show();
+        $("#img_I").hide();         
+        $("#img_N").show();        
+        $(".registerBox").show();    
     });
 }
