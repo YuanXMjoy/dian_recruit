@@ -2,7 +2,9 @@
  * Created by JOYyuan on 16/10/6.
  */
 $(function(){
-    $('#dowebok').fullpage();
+    $('#dowebok').fullpage({
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage','5thPage' ,'6thPage','7thPage','lastPage']
+	});
 	$("#qgroup").attr("class","big");
 	$("#qrcode").attr("class","big");
 });
@@ -11,7 +13,7 @@ $(document).ready(function(){
 	$("body").mouseover(function(){
 		$("#stick").hide();
 		$("#contactD").css("position","relative")
-					  .css("top","-66px")
+					  .css("top","-66px");
 		$("#tm").css("font-size","14px")
 				.css("margin-top","10px");
 		$("#contact_tel")
