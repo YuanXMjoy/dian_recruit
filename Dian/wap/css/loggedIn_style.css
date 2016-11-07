@@ -1,0 +1,146 @@
+#wrapper {
+}
+
+#box_line1 {
+}
+.img-wrap{
+    height:35px;
+    text-align:center;
+    padding-top: 20px;
+}
+.img-wrap img{
+    height:100%;
+}
+.process_box {
+    clear: both;
+    display: inline-block;
+    background-color: #dfddda; /* unstart color*/
+    width: 40%;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+
+#box_apply, #box_all-night {
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+#box_exam, #box_interview {
+    margin-right: 5%;
+}
+
+#box_apply, #box_exam {
+
+    /**/
+}
+
+#box_all-night, #box_interview {
+    /**/
+}
+
+.status_box p {
+    display: inline-block;
+    font-size: 12px;
+    color: #FDE7D2;
+    margin: 0;
+}
+
+.process_content {
+    margin-top: 4%;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #FA8A27;
+}
+
+.time_txt {
+    font-size: 10px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin: 0;
+    text-align: center;
+}
+
+#join_txt {
+    margin: 0;
+    text-align: center;
+    color: #FA8A27;
+    cursor: pointer;
+}
+
+#join_hide {
+    color: #dfddda;
+}
+
+#result_txt {
+    text-align: center;
+    position: relative;
+    top: 68%;
+    color: #FA8A27;
+}
+
+#left-navibar_logout {
+    cursor: pointer;
+}
+
+#apply_txt.unstart, #exam_txt.unstart, #interview_txt.unstart, #all-night_txt.unstart {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 30%;
+    background-color: #cccccc;
+    border-radius: 7px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#apply_txt.pass, #exam_txt.pass, #interview_txt.pass, #all-night_txt.pass {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 30%;
+    background-color: #6BC36B;
+    border-radius: 7px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#apply_txt.check, #exam_txt.check, #interview_txt.check, #all-night_txt.check {
+
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 30%;
+    background-color: #FA8823;
+    border-radius: 7px;
+    text-align: center ;
+    color : #ffffff;
+
+}
+
+#apply_txt.fail, #exam_txt.fail, #interview_txt.fail, #all-night_txt.fail {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 30%;
+    background-color: #ff4933;
+    border-radius: 7px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#passStatus.lq {
+    width: 48px;
+    height: 16px;;
+    font-size: 14px;
+    color: #ffffff;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    margin-top: 2px;
+    margin-right: 2px;
+    background-color: #ffd253;
+}

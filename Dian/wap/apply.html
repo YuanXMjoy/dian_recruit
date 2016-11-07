@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <title>报名</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta charset="utf-8">
+    <!--     <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/apply_style.css">
+    <link rel="stylesheet" type="text/css" href="css/apply_error_style.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/left-navibar.js"></script>
+    <script src="js/apply.js"></script>
+    <script src="js/arrange.js"></script>
+
+<body>
+<h1>Dian团队2016年冬季招新报名表</h1>
+
+<div class="content">
+    <div class="fillin_item">
+        <span>姓名</span>
+        <input type="text" name="input_name" id="input_name" placeholder="请填写姓名" maxlength="15">
+    </div>
+    <div class="fillin_item">
+        <span>学号</span>
+        <input type="text" name="input_uid" id="input_uid" placeholder="请填写学号" maxlength="10">
+    </div>
+    <div class="check_item" id="line_sex">
+        <span id="spSex">性别</span>
+        <label>
+            <input type="radio" name="sex" id="input_sex_f" value="0" class="radio">
+            <span class="radio-input"></span>
+            <span id="female">女</span>
+        </label>
+        <label>
+            <input type="radio" name="sex" id="input_sex_m" value="1" class="radio">
+            <span class="radio-input"></span>
+            <span>男</span>
+        </label>
+    </div>
+    <div class="fillin_item">
+        <span id="tel">联系电话</span>
+        <input type="text" name="input_tel" id="input_tel" placeholder="请填写联系电话" maxlength="11">
+    </div>
+    <div class="fillin_item">
+        <span id="mail">联系邮箱</span>
+        <input type="text" name="input_mail" id="input_mail" placeholder="请填写邮箱" maxlength="30">
+    </div>
+    <div class="fillin_item">
+        <span>专业</span>
+        <input type="text" name="input_major" id="input_major" placeholder="请填写专业" maxlength="30">
+    </div>
+    <div class="check_item">
+        <span id="spGrade">年级</span>
+
+        <div class="input_grade">
+            <label>
+                <input type="radio" name="grade" id="input_grade_16" value="2016" class="radio">
+                <span class="radio-input"></span>
+                <span id="text_16">2016级</span>
+            </label>
+            <label>
+                <input type="radio" name="grade" id="input_grade_15" value="2015" class="radio">
+                <span class="radio-input"></span>
+                <span>2015级</span>
+            </label>
+            <label class="after-label">
+                <input type="radio" name="grade" id="input_grade_14" value="2014" class="radio">
+                <span class="radio-input"></span>
+                <span id="text_14">2014级</span>
+            </label>
+            <label class="after-label">
+                <input type="radio" name="grade" id="input_grade_13" value="2013" class="radio">
+                <span class="radio-input"></span>
+                <span>2013级</span>
+            </label>
+        </div>
+    </div>
+    <div class="check_item">
+        <span id="fail_text">是否挂科</span>
+        <label>
+            <input type="radio" name="failure" id="input_failure_y" value="0" class="radio">
+            <span class="radio-input"></span>
+            <span id="fail_text_y">是</span>
+        </label>
+        <label>
+            <input type="radio" name="failure" id="input_failure_n" value="1" class="radio">
+            <span class="radio-input"></span>
+            <span id="fail_text_n">否</span>
+        </label>
+    </div>
+    <div class="fillin_item" id="line_gpa">
+        <span>最近加权</span>
+        <input type="text" name="input_gpa" id="input_gpa" placeholder="请填写加权" maxlength="5">
+    </div>
+    <div class="fillin_item" id="line_prizes">
+        <p id="text_prizes">曾获奖项</p>
+        <textarea id="input_prizes" name="input_prizes" placeholder="数学／物理／计算机方面"></textarea>
+    </div>
+    <div class="fillin_item" id="line_tech">
+        <p id="text_tech">技术积累</p>
+        <textarea id="input_tech" name="input_tech" placeholder="主要介绍完成的作品、擅长的技术方向、感兴趣的技术内容等"></textarea>
+    </div>
+    <div class="fillin_item" id="line_intro">
+        <p id="text_intro">个人综合简介</p>
+        <textarea id="input_intro" name="input_intro" placeholder="主要介绍性格特点、工作作风、团队精神等"></textarea>
+    </div>
+    <div class="fillin_item" id="line_join">
+        <p id="text_join">加入团队打算</p>
+        <textarea id="input_join" name="input_join" placeholder="结合你对Dian团队的认识，描述你加入Dian团队后的打算"></textarea>
+    </div>
+    <button id="submit">提交报名表</button>
+</div>
+
+</body>
+</html>

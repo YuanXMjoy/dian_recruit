@@ -1,0 +1,245 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../sass/apply_style.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 9, ../sass/apply_style.scss */
+body {
+  font-family: "SimHei";
+  font-size: 0;
+  background-color: #FFFCF9;
+}
+
+/* line 14, ../sass/apply_style.scss */
+h1 {
+  font-size: 2rem;
+  color: #FA8823;
+  text-align: center;
+  line-height: 3rem;
+  padding-top: 2rem;
+}
+
+/* line 21, ../sass/apply_style.scss */
+.content {
+  width: 100%;
+}
+/* line 24, ../sass/apply_style.scss */
+.fillin_item {
+  width: 30rem;
+  margin: 2rem auto;
+}
+/* line 27, ../sass/apply_style.scss */
+.fillin_item span {
+  width: 7rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-right: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 34, ../sass/apply_style.scss */
+.fillin_item p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-bottom: 0.2rem;
+}
+/* line 39, ../sass/apply_style.scss */
+.fillin_item input[type="text"] {
+  margin: 0;
+  border: 0.1rem solid #A18864;
+  width: 20.6rem;
+  height: 2rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #555;
+  background-color: #FFFCF9;
+  outline: 0;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transition: border 0.2s linear, box-shadow 0.2s linear;
+  -o-transition: border 0.2s linear, box-shadow 0.2s linear;
+  -webkit-transition: border 0.2s linear, box-shadow 0.2s linear;
+  transition: border 0.2s linear, box-shadow 0.2s linear;
+}
+/* line 53, ../sass/apply_style.scss */
+.fillin_item input[type="text"]:focus {
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(161, 136, 100, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(161, 136, 100, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(161, 136, 100, 0.6);
+}
+/* line 57, ../sass/apply_style.scss */
+.fillin_item textarea {
+  width: 28rem;
+  height: 10rem;
+  padding: 0.4rem 0.6rem;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #555;
+  border: 0.1rem solid #A18864;
+  resize: none;
+  background-color: #FFFCF9;
+  outline: 0;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  -moz-transition: border 0.2s linear, box-shadow 0.2s linear;
+  -o-transition: border 0.2s linear, box-shadow 0.2s linear;
+  -webkit-transition: border 0.2s linear, box-shadow 0.2s linear;
+  transition: border 0.2s linear, box-shadow 0.2s linear;
+}
+/* line 72, ../sass/apply_style.scss */
+.fillin_item textarea:focus {
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(161, 136, 100, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(161, 136, 100, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(161, 136, 100, 0.6);
+}
+
+/* line 77, ../sass/apply_style.scss */
+.check_item {
+  width: 30rem;
+  margin: 2rem auto;
+}
+/* line 80, ../sass/apply_style.scss */
+.check_item span {
+  width: 7rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-right: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  outline: 0;
+}
+/* line 89, ../sass/apply_style.scss */
+.check_item input[type="checkbox"], .check_item input[type="radio"] {
+  outline: 0;
+  display: none;
+}
+/* line 93, ../sass/apply_style.scss */
+.check_item label {
+  outline: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 97, ../sass/apply_style.scss */
+.check_item label.after-label {
+  margin-top: 2rem;
+}
+/* line 100, ../sass/apply_style.scss */
+.check_item .radio-input {
+  background: url("../img/radiobutton.png") center center no-repeat;
+  height: 2rem;
+  width: 2rem;
+}
+/* line 105, ../sass/apply_style.scss */
+.check_item .radio:checked + .radio-input {
+  background-image: url("../img/radiobutton_true.png");
+}
+/* line 108, ../sass/apply_style.scss */
+.check_item .input_grade {
+  width: 22rem;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 114, ../sass/apply_style.scss */
+.content button {
+  width: 30rem;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  background-color: #fa8823;
+  border: 0;
+  line-height: 5rem;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}

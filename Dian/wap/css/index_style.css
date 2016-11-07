@@ -1,0 +1,328 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 5, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-moz-keyframes nextIcon {
+  from {
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+  to {
+    -moz-transform: translate(-50%, 70%);
+    transform: translate(-50%, 70%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes nextIcon {
+  from {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(-50%, 70%);
+    transform: translate(-50%, 70%);
+    opacity: 1;
+  }
+}
+@keyframes nextIcon {
+  from {
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+  to {
+    -moz-transform: translate(-50%, 70%);
+    -ms-transform: translate(-50%, 70%);
+    -webkit-transform: translate(-50%, 70%);
+    transform: translate(-50%, 70%);
+    opacity: 1;
+  }
+}
+/* line 19, ../sass/index_style.scss */
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "SimHei";
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+/* line 26, ../sass/index_style.scss */
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+/* line 31, ../sass/index_style.scss */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 35, ../sass/index_style.scss */
+.container li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+/* line 43, ../sass/index_style.scss */
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 48, ../sass/index_style.scss */
+.page-hidden {
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+
+/* line 51, ../sass/index_style.scss */
+.home-page {
+  z-index: 10;
+  background-color: #F8E3BD;
+}
+
+/* line 55, ../sass/index_style.scss */
+.group-intr {
+  z-index: 2;
+  background: url("../img/group-bg.png") center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 60, ../sass/index_style.scss */
+.process-intr {
+  z-index: 1;
+}
+
+/* line 63, ../sass/index_style.scss */
+.group-advice {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 95%;
+  z-index: 8;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+/* line 72, ../sass/index_style.scss */
+.group-advice-hidden {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 76, ../sass/index_style.scss */
+.next-button {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  width: 2rem;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -moz-animation: nextIcon 1.5s ease-in-out infinite;
+  -webkit-animation: nextIcon 1.5s ease-in-out infinite;
+  animation: nextIcon 1.5s ease-in-out infinite;
+}
+/* line 82, ../sass/index_style.scss */
+.next-button img {
+  width: 100%;
+}
+
+/* line 87, ../sass/index_style.scss */
+.group-container {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  overflow-x: hidden;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 96, ../sass/index_style.scss */
+.circle-wrap {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+/* line 102, ../sass/index_style.scss */
+.circle-wrap .circle {
+  position: static;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  background: url("../img/circle.png") center no-repeat;
+}
+
+/* line 110, ../sass/index_style.scss */
+.circle-wrap .circle-active {
+  background: url("../img/circle_active.png") center no-repeat;
+}
+
+/* line 115, ../sass/index_style.scss */
+.container .group-wrap {
+  width: 100%;
+}
+
+/* line 118, ../sass/index_style.scss */
+.group-hidden {
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+/* line 121, ../sass/index_style.scss */
+.mobile-group {
+  z-index: 9;
+}
+
+/* line 124, ../sass/index_style.scss */
+.xunce-group {
+  z-index: 8;
+}
+
+/* line 127, ../sass/index_style.scss */
+.weidanmu-group {
+  z-index: 7;
+}
+
+/* line 130, ../sass/index_style.scss */
+.norway-group {
+  z-index: 6;
+}
+
+/* line 133, ../sass/index_style.scss */
+.meiguo-group {
+  z-index: 5;
+}
+
+/* line 136, ../sass/index_style.scss */
+.smartSAN-group {
+  z-index: 4;
+}
+
+/* line 139, ../sass/index_style.scss */
+.huawei-group {
+  z-index: 3;
+}
+
+/* line 144, ../sass/index_style.scss */
+.liucheng-wrap {
+  position: static;
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+/* line 151, ../sass/index_style.scss */
+.test {
+  width: 100%;
+  height: 2rem;
+  background-color: #000;
+  font-size: 3rem;
+}

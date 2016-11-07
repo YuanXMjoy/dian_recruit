@@ -135,6 +135,8 @@
     color: #FF7F28;
     font-size: 12px;
     cursor: pointer;
+    margin-top:-5px;
+    display: block;
 }
 
 
@@ -148,8 +150,7 @@
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    margin-top: 2px;
-    margin-right: 2px;
+    margin:5px 0 0 5px;
 }
 #netStatus.pass,#noteStatus.pass,#viewStatus.pass,#nightStatus.pass {
     width: 48px;
@@ -159,8 +160,7 @@
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    margin-top: 2px;
-    margin-right: 2px;
+    margin:5px 0 0 5px;
     background-color: #6BC36B;
     text-align: center;
 
@@ -174,8 +174,7 @@
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    margin-top: 2px;
-    margin-right: 2px;
+    margin:5px 0 0 5px;
     background-color: #FA8823;
     text-align: center;
 }
@@ -188,8 +187,7 @@
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    margin-top: 2px;
-    margin-right: 2px;
+    margin:5px 0 0 5px;
     background-color: #FF4933;
 }
 #passStatus.lq{

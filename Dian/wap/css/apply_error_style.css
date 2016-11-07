@@ -1,0 +1,129 @@
+#input_name.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_name.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_name.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_name.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_uid.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_uid.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_uid.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_uid.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_tel.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_tel.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_tel.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_tel.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_mail.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_mail.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_mail.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_mail.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_major.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_major.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_major.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_major.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_gpa.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_gpa.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_gpa.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_gpa.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_prizes.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_prizes.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_prizes.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_prizes.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_tech.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_tech.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_tech.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_tech.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_intro.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_intro.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_intro.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_intro.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_join.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_join.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_join.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_join.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#spSex.error{
+    color: #ff5849;
+}
+#spGrade.error{
+    color: #ff5849;
+}
+#fail_text.error{
+    color: #ff5849;
+}

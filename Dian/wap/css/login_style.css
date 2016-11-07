@@ -1,0 +1,154 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size:62.5%;
+}
+
+body{
+	width: 100%;
+    height: 100%;
+    background-color: #FFFCF9;
+}
+.remindertxt {
+    text-align: center;
+}
+
+.row-fluid {
+    padding: 1.5rem 0;
+}
+
+#choice {
+    background-color: #FFFCF9;
+    font-size: 2rem;
+}
+
+.span6 {
+    text-align: center;
+}
+
+#login_bottom {
+    border-bottom: 0.1rem solid #FB9100;
+}
+
+#login,
+#register {
+    color: #B6B6B7;
+}
+
+#loginarea,
+#registerarea {
+    font-size: 1.8rem;
+    background-color: #FFFCF9;
+    color: #FB9100;
+    white-space: nowrap;
+}
+
+#loginarea p {
+    line-height: 1.8rem;
+    padding-top: 10%;
+    padding-bottom: 6%;
+}
+
+#registerarea p {
+    line-height: 1.8rem;
+    padding-top: 10%;
+    padding-bottom: 6%;
+}
+.input-text-wrap{
+	width:28rem;
+	margin:0 auto;
+}
+.userinfo,
+.userpwd,
+.userregi,
+.userveri,
+.setpwd {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.userinfo,
+.userregi {
+    background-image: url(../img/loginfo.png);
+}
+
+.userpwd,
+.setpwd {
+    background-image: url(../img/pwd.png);
+}
+
+@media screen and (min-width: 700px) {
+    #register input {
+        width: 94%;
+    }
+    #input_vericode {
+        width: 70% !important;
+    }
+    #vericode_line {
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #input_vericode {
+        width: 60% !important;
+    }
+}
+
+.userveri {
+    background-image: url(../img/code_icon.png);
+}
+
+#vericode_line {
+    border-bottom: 1px solid #DAD8D8;
+    margin-bottom: 10px !important;
+}
+
+#input_vericode {
+    display: inline-block;
+    margin-bottom: 0px !important;
+}
+
+#getCode {
+    position: relative;
+    top: -4px;
+    left: -8px;
+    border: 1px solid #DAD8D8;
+    background-color: #FFFCF9;
+    color: #DAD8D8;
+}
+
+#loginarea input,
+#registerarea input {
+    padding: 0px 0px 10px 30px;
+    width: 25rem;
+    outline: none;
+    border:none;
+    border-radius: 0;
+    box-shadow: 0px 0px 0px #FFFCF9;
+    border-bottom: 1px solid #DAD8D8;
+    background-color: #FFFCF9;
+}
+
+#login_btn,
+#confirm_btn {
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+    color: #FB9100;
+    background-color: #FFFCF9;
+    border: 1px solid #FB9100;
+    border-radius: 8px;
+    tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    outline:0;
+}
+#login_btn {
+	margin-top:7rem;
+}

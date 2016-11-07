@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<title>加入我们</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login_style.css">
+	<link rel="stylesheet" href="css/login_error_style.css">
+</head>
+<body>
+	<div class="row-fluid" id="navtop">
+		<div class="span4 offset4">
+			<img id="logo" src="img/Dian-logo.png">
+		</div>
+	</div>
+	<!--注册登录选择-->	
+	<div class="container-fluid" id="choice">
+		<div class="row-fluid">
+			<div class="span6" id="login_bottom">
+				<p id="login">登录</p>
+			</div>
+			<div class="span6" id="register_bottom">
+				<p id="register">注册</p>
+			</div>
+		</div>
+	</div>
+	<!--注册登录选择 结束-->
+	<!--顶部导航栏 结束-->	
+
+	<!--登录内容-->
+	<div class="container-fluid" id="loginarea">
+		<!--输入账号-->
+		<p class="remindertxt">请输入账号和密码后登录系统</p>
+		<div class="row-fluid">
+			<div class="input-text-wrap">
+				<i class="userinfo"></i>			
+				<input type="text" name="userinfo" placeholder="手机" id="input_user">
+			</div>
+		</div>
+		<!--输入密码-->
+		<div class="row-fluid">
+			<div class="input-text-wrap">
+				<i class="userpwd"></i>			
+				<input type="password" name="pwd" placeholder="请输入密码" id="input_pwd">
+			</div>
+		</div>
+		<div class="row-fluid">
+			<button id="login_btn">登录</button>	
+		</div>	
+		</div>
+	</div>
+	<!--登录内容 结束-->
+
+	<!--注册内容-->
+	<div class="container-fluid" id="registerarea" style="display:none">
+		<p class="remindertxt">请输入信息注册账号</p>
+		<div class="row-fluid">
+			<!--注册账号-->
+			<div class="input-text-wrap">
+				<i class="userregi"></i>			
+				<input type="text" name="userregi" placeholder="请输入手机号" id="input_userinfo">
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="input-text-wrap" id="vericode_line">
+				<!--输入验证码-->
+				<i class="userveri"></i>		
+				<input type="text" name="vericode" placeholder="请输入验证码" id="input_vericode" style="border-bottom:none">
+				<button id="getCode">获取验证码</button>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<!--密码-->
+			<div class="input-text-wrap">
+				<i class="setpwd"></i>			
+				<input type="password" name="setpwd" placeholder="请输入账号密码" id="input_setpwd">
+			</div>
+		</div>
+		<div class="row-fluid">
+			<button id="confirm_btn">确认</button>
+		</div>				
+		</div>
+	</div>
+	<!--注册内容 结束-->	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/login_css.js"></script>
+	<script src="js/left-navibar.js"></script>
+	<script src="js/login_action.js"></script>
+</body>
+</html>

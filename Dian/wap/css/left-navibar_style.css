@@ -1,0 +1,66 @@
+body {
+	background-color: #FFFCF9;
+}
+
+.left-navibar {
+	display: none;
+}
+
+#left-navibar-userinfo {
+	position: fixed;
+	top: 0;
+	border: 0;
+	width: 56%;
+	height: 21%;
+	z-index: 999;
+	background-color: #fca733;
+}
+
+#left-navibar_login {
+	position: relative;
+	top: 45%;
+	left: 20%;
+	color: #fff;
+	font-size: 20px;
+}
+
+#left-navibar_logout {
+	position: relative;
+	top: 53%;
+	left: 74%;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.left-navibar ul{
+	margin-left:25px;
+}
+.left-navibar li {
+	position: relative;
+	font-size: 16px;
+	color: #8F7F74;
+	padding-bottom: 7.5%;
+	padding-top: 7.5%;
+	list-style-type:none;
+	cursor: pointer;
+}
+
+#left-navibar-items {
+	position: fixed;
+	bottom: 0;
+	border: 0;
+	width: 56%;
+	height: 79%;
+	z-index: 999;
+	background-color: #fff;
+}
+
+#left-navibar-bottom {
+	position: fixed;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 998;
+	background-color: rgba(131,139,139,0.6);
+}

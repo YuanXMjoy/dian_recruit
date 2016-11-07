@@ -1,0 +1,65 @@
+.error {
+    display: inline-block;
+    color: #ff5849;
+    font-size: 16px;
+}
+#input_userinfo.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_userinfo.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_userinfo.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_userinfo.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_vericode.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_vericode.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_vericode.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_vericode.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_setpwd.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_setpwd.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_setpwd.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_setpwd.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_user.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_user.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_user.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_user.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}
+#input_pwd.error::-webkit-input-placeholder{
+    color: #ff5849;/* WebKit browsers */
+}
+#input_pwd.error:-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 4 to 18 */
+}
+#input_pwd.error::-moz-placeholder{
+    color: #ff5849;/* Mozilla Firefox 19+ */
+}
+#input_pwd.error:-ms-input-placeholder{
+    color: #ff5849;/* Internet Explorer 10+ */
+}

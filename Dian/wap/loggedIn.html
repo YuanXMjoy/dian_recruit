@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>进度查询</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/loggedIn_style.css">
+</head>
+
+<body>
+	<!--顶部导航栏-->
+	<div class="logo img-wrap" id="navtop">
+		<img id="logo" src="img/Dian-logo.png">
+	</div>	
+	<!--顶部导航栏 结束-->	
+	<!--流程部分-->
+	<div class="container-fluid" id="wrapper">
+		<!--第一行-->
+		<div class="row-fluid" id="box_line1"> 
+			<div id="box_apply" class="process_box">
+				<div class="status_box" id="apply_status">
+					<p id="apply_txt">未通过</p>
+				</div>
+				<p class="process_content">网申</p>
+				<p class="time_txt">开始时间:<br>2016/11/12 00:00</p>
+				<p id="join_txt">点击此处报名</p>
+			</div>
+			<div id="box_exam" class="process_box">
+				<div class="status_box" id="process_status">
+					<p id="exam_txt">未通过</p>
+				</div>
+				<p class="process_content">笔试</p>
+				<p class="time_txt">时间: 2016/11/16 19:00<br>地点：启明学院亮胜4楼</p>
+				<p id="join_hide">点击此处报名</p>			
+			</div>
+		</div>
+		<!--第二行-->		
+		<div class="row-fluid" id="box_line2">
+			<div id="box_all-night" class="process_box">
+				<div class="status_box">
+					<p id="all-night_txt">未通过</p>
+				</div>
+				<p class="process_content">通宵测试</p>
+				<p class="time_txt">时间: 2016/11/19 19:00<br>地点：启明学院亮胜3楼</p>
+			</div>		
+			<div id="box_interview" class="process_box">
+				<div class="status_box">
+					<p id="interview_txt">未通过</p>
+				</div>
+				<p class="process_content">面试</p>
+				<p class="time_txt">时间: 2016/11/17 19:00<br>地点：启明学院亮胜4楼</p>
+			</div>
+		</div>
+	</div>
+	<div id="result_txt"></div>
+	<!--流程部分 结束-->
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/left-navibar.js"></script>	
+	<script src="js/loggedIn.js"></script>
+	<script src="js/arrange.js"></script>
+</body>
+</html>
