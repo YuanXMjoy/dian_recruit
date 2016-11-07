@@ -28,7 +28,8 @@ var lqStatus;
 
 $(document).ready(function () {
     if (phone == undefined) {
-        $("body").hide();
+         $("body").hide();
+        window.location.href="login.html";
     } else {
         $("body").show();
         $("#userP").html(phone);
@@ -36,9 +37,55 @@ $(document).ready(function () {
     $("#exitBtn").click(function () {
         window.location.href = "login.html"
     });
+    webClock();
     applyInfo();
 
 });
+function getSeverTime() {
+    var xmlHttp = new XMLHttpRequest();
+    if (!xmlHttp) {
+        xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlHttp.open("HEAD", location.href, false);
+    xmlHttp.send();
+    var severTime = new Date(xmlHttp.getResponseHeader("Date"));
+    return severTime;
+}
+function webClock() {
+    var nowTime = getSeverTime();
+    var now1 = new Date(nowTime);
+    var s1 = now1.getTime();
+    var endjl = new Date("2016/11/12 00:00");
+    var sjl = endjl.getTime();
+    var t1 = sjl - s1;
+    var endbs = new Date("2016/11/16 00:00");
+    var sbs = endbs.getTime();
+    var t2 = sbs - s1;
+    var endms = new Date("2016/11/17 00:00");
+    var sms = endms.getTime();
+    var t3 = sms - s1;
+    var endtxcs = new Date("2016/11/19 00:00");
+    var stxcs = endtxcs.getTime();
+    var t4 = stxcs - s1;
+    var endlq = new Date("2016/11/20 24:00");
+    var slq = endlq.getTime();
+    var t5 = slq - s1;
+    if (t1 < 0) {
+        $(".applyBox").css("background-color", "#fde7d2");
+    }
+    if (t2 < 0) {
+        $(".noteTest").css("background-color", "#fde7d2");
+    }
+    if (t3 < 0) {
+        $(".interview").css("background-color", "#fde7d2");
+    }
+    if (t4 < 0) {
+        $(".nightTest").css("background-color", "#fde7d2");
+    }
+    if (t5 < 0) {
+        $("applyStatus").css("background-color", "#fde7d2");
+    }
+}
 function applyInfo() {
     $("#applyBtn").click(function () {
         window.location.href = "loggedIn.html";
