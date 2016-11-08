@@ -108,7 +108,140 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     opacity: 1;
   }
 }
-/* line 19, ../sass/index_style.scss */
+@-moz-keyframes carMoveOne {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  49% {
+    background-image: url("../img/car_1.png");
+  }
+  50% {
+    top: 41%;
+    right: 86%;
+    background-image: url("../img/car_2.png");
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    background-image: url("../img/car_2.png");
+  }
+  100% {
+    top: 60%;
+    right: 35%;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes carMoveOne {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  49% {
+    background-image: url("../img/car_1.png");
+  }
+  50% {
+    top: 41%;
+    right: 86%;
+    background-image: url("../img/car_2.png");
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    background-image: url("../img/car_2.png");
+  }
+  100% {
+    top: 60%;
+    right: 35%;
+    opacity: 0;
+  }
+}
+@keyframes carMoveOne {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  49% {
+    background-image: url("../img/car_1.png");
+  }
+  50% {
+    top: 41%;
+    right: 86%;
+    background-image: url("../img/car_2.png");
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    background-image: url("../img/car_2.png");
+  }
+  100% {
+    top: 60%;
+    right: 35%;
+    opacity: 0;
+  }
+}
+@-moz-keyframes peopleMove {
+  100% {
+    top: 49%;
+    left: 50%;
+  }
+}
+@-webkit-keyframes peopleMove {
+  100% {
+    top: 49%;
+    left: 50%;
+  }
+}
+@keyframes peopleMove {
+  100% {
+    top: 49%;
+    left: 50%;
+  }
+}
+@-moz-keyframes scale {
+  0% {
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* line 62, ../sass/index_style.scss */
 html {
   width: 100%;
   height: 100%;
@@ -117,20 +250,20 @@ html {
   overflow: hidden;
 }
 
-/* line 26, ../sass/index_style.scss */
+/* line 69, ../sass/index_style.scss */
 body {
   width: 100%;
   height: 100%;
   font-size: 0;
 }
 
-/* line 31, ../sass/index_style.scss */
+/* line 74, ../sass/index_style.scss */
 .container {
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 35, ../sass/index_style.scss */
+/* line 78, ../sass/index_style.scss */
 .container li {
   position: absolute;
   width: 100%;
@@ -141,13 +274,13 @@ body {
   -webkit-transition-delay: 0s;
   transition: all 0.5s ease-in-out 0s;
 }
-/* line 43, ../sass/index_style.scss */
+/* line 86, ../sass/index_style.scss */
 .img-wrap img {
   width: 100%;
   height: 100%;
 }
 
-/* line 48, ../sass/index_style.scss */
+/* line 91, ../sass/index_style.scss */
 .page-hidden {
   -moz-transform: translate(0, -100%);
   -ms-transform: translate(0, -100%);
@@ -155,13 +288,13 @@ body {
   transform: translate(0, -100%);
 }
 
-/* line 51, ../sass/index_style.scss */
+/* line 94, ../sass/index_style.scss */
 .home-page {
   z-index: 10;
   background-color: #F8E3BD;
 }
 
-/* line 55, ../sass/index_style.scss */
+/* line 98, ../sass/index_style.scss */
 .group-intr {
   z-index: 2;
   background: url("../img/group-bg.png") center;
@@ -171,12 +304,12 @@ body {
   background-size: cover;
 }
 
-/* line 60, ../sass/index_style.scss */
+/* line 103, ../sass/index_style.scss */
 .process-intr {
   z-index: 1;
 }
 
-/* line 63, ../sass/index_style.scss */
+/* line 106, ../sass/index_style.scss */
 .group-advice {
   position: absolute;
   left: 50%;
@@ -194,14 +327,54 @@ body {
   transition: all 0.5s ease-in-out 0s;
 }
 
-/* line 72, ../sass/index_style.scss */
+/* line 115, ../sass/index_style.scss */
 .group-advice-hidden {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   z-index: 1;
 }
 
-/* line 76, ../sass/index_style.scss */
+/* line 119, ../sass/index_style.scss */
+.car {
+  position: absolute;
+  top: 21%;
+  right: 37%;
+  width: 5rem;
+  height: 3.5rem;
+  background: url("../img/car_1.png") center no-repeat;
+  -moz-animation: carMoveOne 7s linear 0s infinite;
+  -webkit-animation: carMoveOne 7s linear 0s infinite;
+  animation: carMoveOne 7s linear 0s infinite;
+}
+
+/* line 128, ../sass/index_style.scss */
+.people {
+  position: absolute;
+  top: 46%;
+  left: 59%;
+  width: 8%;
+  -moz-animation: peopleMove 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: peopleMove 2s ease-in-out 0s infinite alternate;
+  animation: peopleMove 2s ease-in-out 0s infinite alternate;
+}
+/* line 133, ../sass/index_style.scss */
+.people img {
+  width: 100%;
+}
+
+/* line 138, ../sass/index_style.scss */
+.I-icon {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  width: 40%;
+}
+/* line 143, ../sass/index_style.scss */
+.I-icon img {
+  height: auto;
+}
+
+/* line 147, ../sass/index_style.scss */
 .next-button {
   position: absolute;
   bottom: 2%;
@@ -214,13 +387,14 @@ body {
   -moz-animation: nextIcon 1.5s ease-in-out infinite;
   -webkit-animation: nextIcon 1.5s ease-in-out infinite;
   animation: nextIcon 1.5s ease-in-out infinite;
+  z-index: 15;
 }
-/* line 82, ../sass/index_style.scss */
+/* line 153, ../sass/index_style.scss */
 .next-button img {
   width: 100%;
 }
 
-/* line 87, ../sass/index_style.scss */
+/* line 159, ../sass/index_style.scss */
 .group-container {
   position: absolute;
   width: 90%;
@@ -233,7 +407,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 96, ../sass/index_style.scss */
+/* line 168, ../sass/index_style.scss */
 .circle-wrap {
   position: absolute;
   left: 50%;
@@ -243,7 +417,7 @@ body {
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-/* line 102, ../sass/index_style.scss */
+/* line 174, ../sass/index_style.scss */
 .circle-wrap .circle {
   position: static;
   display: inline-block;
@@ -257,17 +431,17 @@ body {
   background: url("../img/circle.png") center no-repeat;
 }
 
-/* line 110, ../sass/index_style.scss */
+/* line 182, ../sass/index_style.scss */
 .circle-wrap .circle-active {
   background: url("../img/circle_active.png") center no-repeat;
 }
 
-/* line 115, ../sass/index_style.scss */
+/* line 187, ../sass/index_style.scss */
 .container .group-wrap {
   width: 100%;
 }
 
-/* line 118, ../sass/index_style.scss */
+/* line 190, ../sass/index_style.scss */
 .group-hidden {
   -moz-transform: translate(-100%, 0);
   -ms-transform: translate(-100%, 0);
@@ -275,54 +449,48 @@ body {
   transform: translate(-100%, 0);
 }
 
-/* line 121, ../sass/index_style.scss */
+/* line 193, ../sass/index_style.scss */
 .mobile-group {
   z-index: 9;
 }
 
-/* line 124, ../sass/index_style.scss */
+/* line 196, ../sass/index_style.scss */
 .xunce-group {
   z-index: 8;
 }
 
-/* line 127, ../sass/index_style.scss */
+/* line 199, ../sass/index_style.scss */
 .weidanmu-group {
   z-index: 7;
 }
 
-/* line 130, ../sass/index_style.scss */
+/* line 202, ../sass/index_style.scss */
 .norway-group {
   z-index: 6;
 }
 
-/* line 133, ../sass/index_style.scss */
+/* line 205, ../sass/index_style.scss */
 .meiguo-group {
   z-index: 5;
 }
 
-/* line 136, ../sass/index_style.scss */
+/* line 208, ../sass/index_style.scss */
 .smartSAN-group {
   z-index: 4;
 }
 
-/* line 139, ../sass/index_style.scss */
+/* line 211, ../sass/index_style.scss */
 .huawei-group {
   z-index: 3;
 }
 
-/* line 144, ../sass/index_style.scss */
-.liucheng-wrap {
-  position: static;
-  display: block;
-  width: 90%;
-  height: 90%;
-  margin: 5%;
-}
-
-/* line 151, ../sass/index_style.scss */
-.test {
-  width: 100%;
-  height: 2rem;
-  background-color: #000;
-  font-size: 3rem;
+/* line 216, ../sass/index_style.scss */
+.join-dian {
+  position: absolute;
+  width: 50%;
+  left: 27%;
+  top: 43%;
+  -moz-animation: scale 1s ease-in-out 0s infinite alternate;
+  -webkit-animation: scale 1s ease-in-out 0s infinite alternate;
+  animation: scale 1s ease-in-out 0s infinite alternate;
 }

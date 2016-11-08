@@ -44,7 +44,7 @@ function isGpa(obj) {
 function nameValidate(chinese) {
     if (chinese == "") {
         console.log("该字段不能为空");
-        $("#input_name").attr("class", "error")
+        $("#input_name").attr("class", "error");
     } else {
         var nameBool = isChinese(chinese);
         if (nameBool) {
@@ -59,49 +59,49 @@ function nameValidate(chinese) {
 function majorValidate(chinese) {
     if (chinese == "") {
         console.log("该字段不能为空");
-        $("#input_major").attr("class", "error")
+        $("#input_major").attr("class", "error");
     } else {
         var nameBool = isChinese(chinese);
         if (nameBool) {
             count++;
         } else {
             alert("非中文字符！");
-            $("#input_major").attr("class", "error")
+            $("#input_major").attr("class", "error");
         }
     }
 }
 function phoneValidate(phoneNum) {
     if (phoneNum == "") {
         console.log("手机号不能为空");
-        $("#input_tel").attr("class", "error")
+        $("#input_tel").attr("class", "error");
     } else {
         var phBool = isPhone(phoneNum);
         if (phBool) {
             count++;
         } else {
             alert("手机号不对");
-            $("#input_tel").attr("class", "error")
+            $("#input_tel").attr("class", "error");
         }
     }
 }
 function stuIdValidate(stuid) {
     if (stuid == "") {
         console.log("学号不能为空");
-        $("#input_uid").attr("class", "error")
+        $("#input_uid").attr("class", "error");
     } else {
         var stuBool = isStuId(stuid);
         if (stuBool) {
             count++;
         } else {
             alert("学号格式不对");
-            $("#input_uid").attr("class", "error")
+            $("#input_uid").attr("class", "error");
         }
     }
 }
 function emailValidate(mail) {
     if (mail == "") {
         console.log("邮箱不能为空");
-        $("#input_mail").attr("class", "error")
+        $("#input_mail").attr("class", "error");
 
     } else {
         var mailBool = isMail(mail);
@@ -109,14 +109,14 @@ function emailValidate(mail) {
             count++;
         } else {
             alert("邮件不对");
-            $("#input_mail").attr("class", "error")
+            $("#input_mail").attr("class", "error");
         }
     }
 }
 function gpaValidate(gpa) {
     if (gpa == "") {
         console.log("gpa不能为空");
-        $("#input_gpa").attr("class", "error")
+        $("#input_gpa").attr("class", "error");
 
     } else {
         var gpaBool = isGpa(gpa);
@@ -124,7 +124,7 @@ function gpaValidate(gpa) {
             count++;
         } else {
             alert("gpa格式");
-            $("#input_gpa").attr("class", "error")
+            $("#input_gpa").attr("class", "error");
 
         }
     }
@@ -133,7 +133,7 @@ function gpaValidate(gpa) {
 function prizeEmptyValidate(res) {
     if (res == "") {
         console.log("该字段不能为空");
-        $("#input_prizes").attr("class", "error")
+        $("#input_prizes").attr("class", "error");
     } else {
         count++;
     }
@@ -141,7 +141,7 @@ function prizeEmptyValidate(res) {
 function techEmptyValidate(res) {
     if (res == "") {
         console.log("该字段不能为空");
-        $("#input_tech").attr("class", "error")
+        $("#input_tech").attr("class", "error");
     } else {
         count++;
     }
@@ -149,7 +149,7 @@ function techEmptyValidate(res) {
 function cvEmptyValidate(res) {
     if (res == "") {
         console.log("该字段不能为空");
-        $("#input_intro").attr("class", "error")
+        $("#input_intro").attr("class", "error");
     } else {
         count++;
     }
@@ -157,7 +157,7 @@ function cvEmptyValidate(res) {
 function planEmptyValidate(res) {
     if (res == "") {
         console.log("该字段不能为空");
-        $("#input_join").attr("class", "error")
+        $("#input_join").attr("class", "error");
     } else {
         count++;
     }
@@ -188,7 +188,6 @@ function getInformation() {
         if (stuGrade == undefined) {
             console.log("年级");
             $("#spGrade").attr("class","error");
-
         } else {
             count++;
         }
