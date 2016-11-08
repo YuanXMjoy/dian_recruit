@@ -41,6 +41,7 @@ $(document).ready(function () {
     applyInfo();
 
 });
+
 function getSeverTime() {
     var xmlHttp = new XMLHttpRequest();
     if (!xmlHttp) {
@@ -121,6 +122,14 @@ function getInfo(num) {
 
 }
 function putInfo(stuId, apName, apPh, level, gpa, failC, tech, cv, plan, sex, apEmail, apMajor, prize) {
+    var check_level=level;
+    if(check_level==2016){
+        $("#input_gpa").attr("disabled", "disabled");
+        $("#current_gpa").css("color","#cccccc");
+        $("#input_gpa").css("border","0.1rem solid #cccccc");
+        $("#input_gpa").css("color","#cccccc");
+
+    }
     $("#input_name").val(apName);
     $("#input_uid").val(stuId);
     $("#input_tel").val(apPh);
