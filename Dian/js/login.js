@@ -127,6 +127,7 @@ function register() {
         var account = $("#account").val();
         var code = $("#code").val();
         var pwd = $("#passwordRe").val();
+        pwd = encrypt(pwd);
         regValidateError(account, code, pwd);
         if (errorCode) {
             $.post("http://120.76.117.125:90/register/getreginfo", {
@@ -161,6 +162,7 @@ function login() {
     $("#loginBtn").click(function () {
         var user = $("#userId").val();
         var pwd = $("#pwdLogin").val();
+        pwd = encrypt(pwd);
         loginValidateError(user, pwd);
         if (loginCode) {
             $.post("http://120.76.117.125:90/login/getlogininfo", {
