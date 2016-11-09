@@ -219,6 +219,7 @@
     color: #ff5849;
     font-size: 16px;
 }
+
 #account.error::-webkit-input-placeholder{
     color: #ff5849;/* WebKit browsers */
 }
