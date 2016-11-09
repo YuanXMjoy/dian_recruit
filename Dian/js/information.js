@@ -157,7 +157,7 @@ function getInformation() {
         var fail_course;
         for (var m = 0; m < fails.length; m++) {
             if (fails[m].checked) {
-                fail_course = fails[k].value;
+                fail_course = fails[m].value;
             }
         }
         var phoneNum = $("#input_tel").val();
@@ -200,7 +200,7 @@ function sendInformation(name, uid, sex, phone, email, major, level, fail_course
         var result = JSON.parse(res);
         var status = result.status;
         var msg = result.msg;
-        alert(status && msg);
+        alert(msg);
         window.location.href = 'arrange.html';
 
     });
